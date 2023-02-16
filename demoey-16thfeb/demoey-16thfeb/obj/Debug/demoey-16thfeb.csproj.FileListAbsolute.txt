@@ -1,0 +1,10 @@
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\obj\Debug\demoey-16thfeb.csproj.AssemblyReference.cache
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\obj\Debug\demoey-16thfeb.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\bin\Debug\demoey-16thfeb.exe.manifest
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\bin\Debug\demoey-16thfeb.application
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\bin\Debug\demoey-16thfeb.exe
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\bin\Debug\demoey-16thfeb.pdb
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\obj\Debug\demoey-16thfeb.exe.manifest
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\obj\Debug\demoey-16thfeb.application
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\obj\Debug\demoey-16thfeb.exe
+C:\Users\labuser\source\repos\demoey-16thfeb\demoey-16thfeb\obj\Debug\demoey-16thfeb.pdb
