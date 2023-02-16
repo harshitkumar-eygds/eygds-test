@@ -126,6 +126,16 @@ namespace demoey_16thfeb
 					break;
 			}
 
+
+
+
+			DateTime date1 = new DateTime(2022, 08, 24, 18, 23, 12);
+
+			DateTime date2 = new DateTime(2023, 08, 24, 18, 23, 12);
+
+			TimeSpan interval = date2 - date1;
+
+			Console.WriteLine(interval);
 			Console.ReadKey();
 		}
 	}
