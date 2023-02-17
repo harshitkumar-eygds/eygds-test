@@ -12,7 +12,7 @@ namespace eydemo17thfeb
 		{
 			char[] arr = { 'a', 'e', 'i', 'o', 'u' };
 
-			String s1 = new string(arr);
+			String s1 = new String(arr);
 
 			Console.WriteLine(s1);
 
@@ -22,6 +22,16 @@ namespace eydemo17thfeb
 
 			string s3 = "data";
 			Console.WriteLine(s3);
+
+
+			StringBuilder addWord = new StringBuilder("Word1");
+			addWord.Append(", Word2");
+			addWord.Append(", Word3");
+			addWord.Remove(0, 5);
+			Console.WriteLine(addWord);
+
+
+
 
 			Console.ReadKey();
 

@@ -1,0 +1,7 @@
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\eydemo17thfeb\eydemo17thfeb\bin\Debug\eydemo17thfeb.exe.config
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\eydemo17thfeb\eydemo17thfeb\bin\Debug\eydemo17thfeb.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\eydemo17thfeb\eydemo17thfeb\bin\Debug\eydemo17thfeb.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\eydemo17thfeb\eydemo17thfeb\obj\Debug\eydemo17thfeb.csproj.AssemblyReference.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\eydemo17thfeb\eydemo17thfeb\obj\Debug\eydemo17thfeb.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\eydemo17thfeb\eydemo17thfeb\obj\Debug\eydemo17thfeb.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\eydemo17thfeb\eydemo17thfeb\obj\Debug\eydemo17thfeb.pdb
