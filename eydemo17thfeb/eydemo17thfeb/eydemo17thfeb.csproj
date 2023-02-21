@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="andor.cs" />
     <Compile Include="asoperator.cs" />
     <Compile Include="functiontest.cs" />
     <Compile Include="gotolabel.cs" />
