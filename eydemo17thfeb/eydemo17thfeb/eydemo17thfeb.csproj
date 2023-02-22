@@ -48,7 +48,9 @@
     <Compile Include="asoperator.cs" />
     <Compile Include="functiontest.cs" />
     <Compile Include="gotolabel.cs" />
+    <Compile Include="jaggedarray.cs" />
     <Compile Include="loops.cs" />
+    <Compile Include="matrixmulti.cs" />
     <Compile Include="practiceprograms.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

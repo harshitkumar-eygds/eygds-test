@@ -6,7 +6,7 @@
 
 //namespace eydemo17thfeb
 //{
-//    class array3d
+//    class practiceprgmon3darray
 //    {
 //        static void Main(string[] args)
 //        {
@@ -16,25 +16,25 @@
 //            Console.Write("Enter Col : ");
 //            int col = int.Parse(Console.ReadLine());
 //            int[,] arr = new int[row, col];
-            
+
 //            Console.WriteLine($"Enter {row * col} numbers");
 
-//            for (int i = 0; i < row; i++) 
+//            for (int i = 0; i < row; i++)
 //            {
 //                for (int j = 0; j < col; j++)
 //                {
-//                    arr[i,j] = int.Parse(Console.ReadLine());
+//                    arr[i, j] = int.Parse(Console.ReadLine());
 //                }
 //            }
 
-//            Console.WriteLine("Your array is");
+//            Console.WriteLine("Your first array is");
 
 //            for (int i = 0; i < row; i++)
 //            {
 //                for (int j = 0; j < col; j++)
 //                {
 //                    Console.Write(arr[i, j] + " ");
-                    
+
 //                }
 //                Console.WriteLine();
 //            }
@@ -73,14 +73,17 @@
 //            {
 //                Console.WriteLine("matrix addition can be performed");
 
-//                for (int i = 0; i < row; i++) {
-//                    for (int j = 0; j < col; j++) {
-//                        Console.Write(arr[i, j] + arr1[i,j] + " ");
+//                for (int i = 0; i < row; i++)
+//                {
+//                    for (int j = 0; j < col; j++)
+//                    {
+//                        Console.Write(arr[i, j] + arr1[i, j] + " ");
 //                    }
 //                    Console.WriteLine();
 //                }
 //            }
-//            else {
+//            else
+//            {
 //                Console.WriteLine("matrix addition cannot be performed");
 //            }
 
@@ -113,7 +116,7 @@
 //                    Console.WriteLine();
 //                }
 
-//            }
+//            }  
 //            else
 //                Console.WriteLine("multiplcation cannot be done");
 
