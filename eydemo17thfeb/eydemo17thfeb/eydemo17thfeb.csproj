@@ -46,6 +46,7 @@
     <Compile Include="3darray.cs" />
     <Compile Include="andor.cs" />
     <Compile Include="asoperator.cs" />
+    <Compile Include="bankbalancepracticeprgm.cs" />
     <Compile Include="exceptionhandling.cs" />
     <Compile Include="functiontest.cs" />
     <Compile Include="genericprogram.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="practiceprograms.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TestUserDefinedException.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
