@@ -47,6 +47,7 @@
     <Compile Include="andor.cs" />
     <Compile Include="asoperator.cs" />
     <Compile Include="functiontest.cs" />
+    <Compile Include="genericprogram.cs" />
     <Compile Include="gotolabel.cs" />
     <Compile Include="jaggedarray.cs" />
     <Compile Include="loops.cs" />
