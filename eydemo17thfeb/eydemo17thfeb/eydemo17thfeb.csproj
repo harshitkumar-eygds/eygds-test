@@ -47,6 +47,7 @@
     <Compile Include="andor.cs" />
     <Compile Include="asoperator.cs" />
     <Compile Include="bankbalancepracticeprgm.cs" />
+    <Compile Include="delegateprgm.cs" />
     <Compile Include="enumprgm.cs" />
     <Compile Include="exceptionhandling.cs" />
     <Compile Include="filehandling.cs" />
