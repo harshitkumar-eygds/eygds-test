@@ -48,16 +48,19 @@
     <Compile Include="asoperator.cs" />
     <Compile Include="bankbalancepracticeprgm.cs" />
     <Compile Include="exceptionhandling.cs" />
+    <Compile Include="filehandling.cs" />
     <Compile Include="functiontest.cs" />
     <Compile Include="genericprogram.cs" />
     <Compile Include="gotolabel.cs" />
     <Compile Include="jaggedarray.cs" />
     <Compile Include="loops.cs" />
     <Compile Include="matrixmulti.cs" />
+    <Compile Include="paramprgm.cs" />
     <Compile Include="practiceprograms.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="TestUserDefinedException.cs" />
+    <Compile Include="thiskeywordprgm.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
