@@ -1,1 +1,9 @@
 abc abc abc 
+this is a demo file for stream reader program
+we are using this for simplilearn
+blah blah
+nice things
+blah blah
+a
+b
+c
