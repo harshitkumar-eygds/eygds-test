@@ -47,6 +47,7 @@
     <Compile Include="andor.cs" />
     <Compile Include="asoperator.cs" />
     <Compile Include="bankbalancepracticeprgm.cs" />
+    <Compile Include="enumprgm.cs" />
     <Compile Include="exceptionhandling.cs" />
     <Compile Include="filehandling.cs" />
     <Compile Include="filehandlingpracticeprogram.cs" />
@@ -56,6 +57,7 @@
     <Compile Include="jaggedarray.cs" />
     <Compile Include="loops.cs" />
     <Compile Include="matrixmulti.cs" />
+    <Compile Include="nestedtrycatch.cs" />
     <Compile Include="paramprgm.cs" />
     <Compile Include="practiceprograms.cs" />
     <Compile Include="Program.cs" />
