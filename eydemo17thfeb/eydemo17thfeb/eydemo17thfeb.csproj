@@ -49,6 +49,7 @@
     <Compile Include="bankbalancepracticeprgm.cs" />
     <Compile Include="exceptionhandling.cs" />
     <Compile Include="filehandling.cs" />
+    <Compile Include="filehandlingpracticeprogram.cs" />
     <Compile Include="functiontest.cs" />
     <Compile Include="genericprogram.cs" />
     <Compile Include="gotolabel.cs" />
