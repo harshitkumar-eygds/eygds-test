@@ -57,6 +57,7 @@
     <Compile Include="functiontest.cs" />
     <Compile Include="genericprogram.cs" />
     <Compile Include="gotolabel.cs" />
+    <Compile Include="inheritanceprgm.cs" />
     <Compile Include="jaggedarray.cs" />
     <Compile Include="loops.cs" />
     <Compile Include="matrixmulti.cs" />
