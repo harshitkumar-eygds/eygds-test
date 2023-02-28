@@ -47,6 +47,7 @@
     <Compile Include="andor.cs" />
     <Compile Include="asoperator.cs" />
     <Compile Include="bankbalancepracticeprgm.cs" />
+    <Compile Include="carinheritance.cs" />
     <Compile Include="day10classes.cs" />
     <Compile Include="day10scooterclass.cs" />
     <Compile Include="delegateprgm.cs" />
@@ -58,10 +59,14 @@
     <Compile Include="genericprogram.cs" />
     <Compile Include="gotolabel.cs" />
     <Compile Include="inheritanceprgm.cs" />
+    <Compile Include="interfaceprgm.cs" />
     <Compile Include="jaggedarray.cs" />
     <Compile Include="loops.cs" />
     <Compile Include="matrixmulti.cs" />
     <Compile Include="nestedtrycatch.cs" />
+    <Compile Include="operatoroverloadingprgm.cs" />
+    <Compile Include="overloadingprgm.cs" />
+    <Compile Include="overriddingprgm.cs" />
     <Compile Include="paramprgm.cs" />
     <Compile Include="practiceprograms.cs" />
     <Compile Include="Program.cs" />
