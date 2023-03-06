@@ -294,3 +294,30 @@ SELECT IIF(@@OPTIONS & 2 = 2,
 SELECT @@TRANCOUNT AS OpenTrans
 COMMIT TRANSACTION
 SELECT @@TRANCOUNT AS OpenTrans
+
+-- can give transaction name also to the transaction 
+BEGIN TRANSACTION DisplayProdcut
+SELECT * FROM Product
+COMMIT TRANSACTION DisplayProduct
+
+
+--===== Mathematical function
+select sin(0) as 'sin(0)' , cos(0) as 'cos(0)', abs(-5.42) as 'abs(-5.42)'
+select floor(9.87) as 'floor(9.87)'
+select power(2,2) as 'power(2,2)'
+select Rand() as 'Rand()'
+ 
+
+ --======== String Function
+select stuff('hello my name is harshit',4,10,'xxxxx')
+
+select * from String_split('hello this is my string', ' ')
+select SOUNDEX('SEAS') , SOUNDEX('SHE') , SOUNDEX('SEEing')
+
+--===date and time function
+select datename(month,getdate())
+select datename(year,getdate())
+select datename(day,getdate())
+
+select getdate();
+select CURRENT_TIMESTAMP
