@@ -321,3 +321,77 @@ select datename(day,getdate())
 
 select getdate();
 select CURRENT_TIMESTAMP
+
+select GETUTCDATE()
+
+select DATEDIFF(year,'2021-2-13',getdate())
+SELECT DATEPART(month, '2017/08/25') AS DatePartInt;
+
+
+insert into Mobile values('realme')
+select * from Mobile
+
+
+--======loops
+
+DECLARE @a INT
+SET @a = 0
+WHILE @a <= 10
+BEGIN
+	PRINT @a
+	IF @a = 2
+	GOTO tech
+	
+	SET @a = @a + 1
+END
+
+tech: 
+	PRINT 'Welcome sir'
+
+
+-------------------------------------
+
+DECLARE @x INT
+IF @x = 1
+	PRINT ' Welcome sir'
+ELSE
+	PRINT 'BYE'
+
+
+----------------------------------------
+
+DECLARE @y INT
+SET @y = 1
+
+WHILE @y <= 10
+BEGIN
+	PRINT @y
+	SET @y = @y + 1
+END  
+
+-------------
+-- WAP for even number b/w 1 to 100
+DECLARE @e INT
+SET @e = 1
+
+WHILE @e <= 100
+BEGIN 
+IF @e % 2 = 0
+	PRINT @e
+SET @e = @e + 1
+END
+
+
+-- WAP for odd number b/w 1 to 100
+DECLARE @o INT
+SET @o = 1
+
+WHILE @o <= 100
+BEGIN 
+IF @o % 2 != 0
+	PRINT @o
+SET @o = @o + 1
+END
+
+declare @yt int
+set @yt= select count(*) from studentnew2
