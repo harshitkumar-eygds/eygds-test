@@ -394,4 +394,39 @@ SET @o = @o + 1
 END
 
 declare @yt int
-set @yt= select count(*) from studentnew2
+set @yt= (select count(*) from studentnew2)
+select @yt
+
+declare @yt2 int
+Select @yt2= count(*) from studentnew2
+select @yt2
+
+ALTER PROCEDURE getcountofstudnew2
+AS
+	declare @yt2 int
+	Select @yt2= count(*) from studentnew2
+	select @yt2
+	return @yt2
+GO
+
+DECLARE @return_value INT
+EXEC @return_value = getcountofstudnew2
+SELECT 'RETURN VALUE' = @return_value
+GO
+
+
+--- if else if
+
+DECLARE @utu INT, @tut INT, @ttu INT
+SET @utu = 1 
+set @tut = 2
+set @ttu =10
+
+IF @utu %10=0
+	PRINT 'utu is divisible by 10'
+else if @tut %10=0
+	PRINT 'tut is divisible by 10'
+else if @ttu % 10 = 0
+	PRINT 'ttu is divisible by 10'
+else
+	PRINT 'none is divisible by 10'
