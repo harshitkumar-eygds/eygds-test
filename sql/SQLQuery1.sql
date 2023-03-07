@@ -430,3 +430,38 @@ else if @ttu % 10 = 0
 	PRINT 'ttu is divisible by 10'
 else
 	PRINT 'none is divisible by 10'
+
+
+grant insert,select on studentnew2 to harshit
+revoke insert,select on studentnew2 to harshit
+
+
+-------- desgin
+
+Roles 
+	User
+	Admin
+
+Admin
+	Admin details
+	password
+	product details
+	user details
+	user order history
+	user cart
+
+User
+	User details
+	Address
+	cart
+	order history
+	product
+	password
+
+------
+
+
+
+ALTER TABLE cart DROP CONSTRAINT productid
+
+
