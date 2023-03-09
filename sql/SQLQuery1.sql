@@ -471,4 +471,60 @@ ALTER TABLE Customers
 
 select * from salesman
 INSERT INTO Salesman(salesman_id, name, city, commission) values(5001, 'James Hoog', 'New York', 0.15)
-INSERT INTO Salesman(salesman_id, name, city, commission) values(5002, 'Nail Knite', 'Paris', 0.13)
+INSERT INTO Salesman(salesman_id, name, city, commission) values(5002, 'Nail Knite', 'Paris', 0.13), 
+(5005, 'Pit Alex', 'London', 0.11),
+(5006, 'MC Lyon','Paris',0.14 ),
+(5007,'Paul Adam','Rome',0.13),
+(5003,'Lauson Hen', 'San Jose', 0.12)
+
+
+
+select * from CUstomers
+
+INSERT INTO Customers(customer_id,cust_name,city,grade,salesman_id) values
+(3002,'Nick Rimando', 'New York' , 100 , 5001),
+(3007,'Brad Davis', 'New York',200,5001),
+(3005,'Graham Zusi','California',200,5002),
+(3008,'Julian Green','London',300,5002),
+(3004,'Fabian Johnson','Paris',300,5006),
+(3009,'Geoff Cameron','Berlin',100,5003),
+(3003,'Jozy Altido','Moscow',200,5007),
+(3001,'Brad Guzan','London',400,5005)
+
+q1:
+SELECT * FROM Salesman WHERE city = 'London'
+
+q2:
+SELECT name FROM Salesman WHERE commission < 0.15
+
+q3:
+SELECT * FROM Salesman WHERE salesman_id BETWEEN 5001 AND 5005
+
+q4:
+SELECT * FROM Salesman WHERE city != 'London'
+
+q5:
+SELECT name FROM Salesman ORDER BY name DESC
+
+q6:
+SELECT city FROM Customers ORDER BY city ASC
+
+q7:
+SELECT cust_name FROM Customers WHERE cust_name LIKE 'N%'
+
+q8:
+SELECT cust_name FROM Customers WHERE cust_name LIKE '%s'
+
+q9:
+SELECT * FROM customers JOIN Salesman on customers.salesman_id = Salesman.salesman_id 
+
+q10:
+SELECT * FROM customers JOIN Salesman on customers.salesman_id = Salesman.salesman_id 
+WHERE customers.city=salesman.city
+
+q11:
+SELECT * FROM customers JOIN Salesman on customers.salesman_id = Salesman.salesman_id 
+WHERE customers.city=salesman.city AND customers.grade BETWEEN 100 AND 400
+
+q12:
+SELECT DISTINCT(city) FROM customers
