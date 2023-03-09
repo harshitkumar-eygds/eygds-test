@@ -552,7 +552,35 @@ SELECT * FROM customers WHERE salesman_id IN (SELECT salesman_id FROM Salesman W
 
 SELECT * FROM customers WHERE salesman_id = ANY (SELECT salesman_id FROM Salesman WHERE commission>0.12)
 
-SELECT * FROM customers WHERE salesman_id = ALL (SELECT salesman_id FROM Salesman WHERE commission>0.12)
+SELECT * FROM customers WHERE salesman_id >= ALL (SELECT salesman_id FROM Salesman WHERE commission>0.12)
 
-select * from salesman
+select * from customers
 
+SELECT name,salesman_id FROM salesman WHERE salesman_id < ALL (SELECT salesman_id FROM Customers WHERE grade = 300)
+
+SELECT salesman_id FROM Customers WHERE grade = 300
+
+
+CREATE TABLE Employee (
+	Empid int NOT NULL IDENTITY(1,1) , 
+	Empname varchar(50) NOT NULL, 
+	gross_salary int NOT NULL,
+	net_gross int NOT NULL, 
+	bonus int NOT NULL, 
+	city varchar(50) NOT NULL, 
+	address varchar(50) NOT NULL,
+	CONSTRAINT PK_Employee PRIMARY KEY(Empid,Empname),
+)
+
+INSERT INTO Employee VALUES('Harshit',100000,90000,8987,'Delhi','NEW DELHI')
+
+CREATE TABLE Company (
+	Company_id INT NOT NULL IDENTITY(10,10) ,
+	company_name VARCHAR(50) , 
+	 
+	cid int NOT NULL FOREIGN KEY REFERENCES Employee(Empid) ,
+	CONSTRAINT PK_company PRIMARY KEY(Company_id),
+	--CONSTRAINT FK_Company_Employee FOREIGN KEY(Empid) REFERENCES Employee(Empid),
+)
+
+CREATE Employee1
