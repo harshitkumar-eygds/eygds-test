@@ -516,7 +516,7 @@ q8:
 SELECT cust_name FROM Customers WHERE cust_name LIKE '%s'
 
 q9:
-SELECT * FROM customers JOIN Salesman on customers.salesman_id = Salesman.salesman_id 
+SELECT * FROM customers inner JOIN Salesman on customers.salesman_id = Salesman.salesman_id 
 
 q10:
 SELECT * FROM customers JOIN Salesman on customers.salesman_id = Salesman.salesman_id 
@@ -528,3 +528,31 @@ WHERE customers.city=salesman.city AND customers.grade BETWEEN 100 AND 400
 
 q12:
 SELECT DISTINCT(city) FROM customers
+
+q13:
+SELECT salesman_id FROM Customers WHERE city = 'London' AND grade BETWEEN 100 AND 500
+
+q14.1:
+SELECT * FROM Custome
+SELECT count(salesman_id) FROM customers GROUP BY city HAVING city='London'
+
+q14.2:
+SELECT * from salesman
+--SELECT name,city from salesman GROUP BY name,city HAVING city='London'
+SELECT max(name) FROM salesman GROUP BY city HAVING city = 'London'
+
+q14.3:
+SELECT max(name),commission from salesman 
+WHERE city='Paris' 
+GROUP BY commission,name 
+HAVING commission>0.1 
+ORDER BY name asc, commission desc
+
+SELECT * FROM customers WHERE salesman_id IN (SELECT salesman_id FROM Salesman WHERE commission>0.12)
+
+SELECT * FROM customers WHERE salesman_id = ANY (SELECT salesman_id FROM Salesman WHERE commission>0.12)
+
+SELECT * FROM customers WHERE salesman_id = ALL (SELECT salesman_id FROM Salesman WHERE commission>0.12)
+
+select * from salesman
+
