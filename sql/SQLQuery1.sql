@@ -465,3 +465,10 @@ User
 ALTER TABLE cart DROP CONSTRAINT productid
 
 
+ALTER TABLE Customers
+   ADD CONSTRAINT FK_Salesman_Customers FOREIGN KEY (salesman_id)
+      REFERENCES Salesman(salesman_id)
+
+select * from salesman
+INSERT INTO Salesman(salesman_id, name, city, commission) values(5001, 'James Hoog', 'New York', 0.15)
+INSERT INTO Salesman(salesman_id, name, city, commission) values(5002, 'Nail Knite', 'Paris', 0.13)
