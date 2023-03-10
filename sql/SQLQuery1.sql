@@ -688,16 +688,14 @@ SELECT * FROM manager2 m1 join manager2 m2 on m1.managerid = m2.managerid WHERE 
 
 CREATE FUNCTION GetAvgMarks(@Studid int)
 RETURNS FLOAT
-AS
-BEGIN
+	AS
+	BEGIN
+		DECLARE @avgmarks float = 0
+		SET @avgmarks = (SELECT avg(marks) FROM subject2 GROUP BY studid HAVING studid = @Studid)
+		RETURN @avgmarks
+	END
 
-DECLARE @avgmarks float = 0
-
-SET @avgmarks = (SELECT avg(marks) FROM subject2 GROUP BY studid HAVING studid = @Studid)
-
-RETURN @avgmarks
-END
+SELECT dbo.GetAvgMarks(1) AS 'avg marks of student 1'
 
 SELECT * FROM subject2 WHERE studid=2
 SELECT avg(marks) FROM subject2 WHERE studid=1
-SELECT dbo.GetAvgMarks(1) AS 'avg marks of student 1'
