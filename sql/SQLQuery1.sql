@@ -684,3 +684,20 @@ INSERT INTO manager2 VALUES
 ('Yohan',81,'sales-yohan','Salem')
 
 SELECT * FROM manager2 m1 join manager2 m2 on m1.managerid = m2.managerid WHERE m1.salesmanid>20
+
+
+CREATE FUNCTION GetAvgMarks(@Studid int)
+RETURNS FLOAT
+AS
+BEGIN
+
+DECLARE @avgmarks float = 0
+
+SET @avgmarks = (SELECT avg(marks) FROM subject2 GROUP BY studid HAVING studid = @Studid)
+
+RETURN @avgmarks
+END
+
+SELECT * FROM subject2 WHERE studid=2
+SELECT avg(marks) FROM subject2 WHERE studid=1
+SELECT dbo.GetAvgMarks(1) AS 'avg marks of student 1'
