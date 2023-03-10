@@ -583,4 +583,101 @@ CREATE TABLE Company (
 	--CONSTRAINT FK_Company_Employee FOREIGN KEY(Empid) REFERENCES Employee(Empid),
 )
 
-CREATE Employee1
+
+CREATE TABLE student2 (
+	studid int NOT NULL IDENTITY(1,1) , 
+	name varchar(50) NOT NULL,
+	city varchar(50) NOT NULL,
+	mobile int not null,
+	CONSTRAINT PK_student2 PRIMARY KEY(studid),
+)
+
+CREATE TABLE subject2 (
+	studid int NOT NULL,
+	sub_name varchar(50) not null,
+	marks int not null,
+	CONSTRAINT FK_subject2_student2 FOREIGN KEY(studid) REFERENCES student2(studid)
+)
+
+INSERT INTO student2 VALUES('Harshit','delhi',1234567),
+('Rohan','Patna',44556677),
+('Sohan','Benguluru',9657654),
+('Mohan','Kochi',92357654),
+('Kohan','Srinagar',96387654),
+('Pohan','Mumbai',99837654),
+('Yohan','Kolkata',99885654),
+('Tohan','Chennai',99887344)
+
+SELECT * FROM student2
+
+INSERT INTO subject2 VALUES
+(1,'English',100),
+(1,'Hindi',87),
+(1,'Maths',98),
+(1,'Physics',78),
+(1,'Chemistry',88),
+(2,'English',45),
+(2,'Hindi',76),
+(2,'Maths',56),
+(2,'Physics',65),
+(2,'Chemistry',78),
+(3,'English',56),
+(3,'Hindi',87),
+(3,'Maths',78),
+(3,'Physics',45),
+(3,'Chemistry',44),
+(4,'English',67),
+(4,'Hindi',87),
+(4,'Maths',67),
+(4,'Physics',56),
+(4,'Chemistry',45),
+(5,'English',67),
+(5,'Hindi',77),
+(5,'Maths',76),
+(5,'Physics',68),
+(5,'Chemistry',98),
+(6,'English',100),
+(6,'Hindi',100),
+(6,'Maths',78),
+(6,'Physics',89),
+(6,'Chemistry',78),
+(7,'English',100),
+(7,'Hindi',100),
+(7,'Maths',100),
+(7,'Physics',50),
+(7,'Chemistry',70),
+(8,'English',40),
+(8,'Hindi',47),
+(8,'Maths',57),
+(8,'Physics',55),
+(8,'Chemistry',78)
+
+DELETE FROM subject2 WHERE studid = 8
+
+SELECT * FROM student2 left join subject2 on student2.studid = subject2.studid;
+SELECT * FROM subject2 right join  student2 on student2.studid = subject2.studid;
+
+SELECT * FROM student2 full join subject2 on student2.studid = subject2.studid;
+
+CREATE TABLE manager2 (
+	managerid int not null IDENTITY(1,1),
+	name varchar(50) not null,
+	salesmanid int not null,
+	salesmanname varchar(50) not null,
+	city varchar(50) not null
+	CONSTRAINT PK_manager2 PRIMARY KEY (managerid)
+)
+
+
+
+INSERT INTO manager2 VALUES
+('Harshit',11,'sales-harshit','Delhi'),
+('Rohan',21,'sales-rohan','Paris'),
+('Mohan',31,'sales-mohan','Kochi'),
+('Sohan',41,'sales-sohan','Chennai'),
+('Kohan',51,'sales-kohan','Kolkata'),
+('Pohan',61,'sales-pohan','Patna'),
+('Tohan',71,'sales-tohan','Ranchi'),
+('Yohan',81,'sales-yohan','Salem')
+
+SELECT * FROM manager2 m1 join manager2 m2 on m1.managerid = m2.managerid WHERE m1.salesmanid>20
