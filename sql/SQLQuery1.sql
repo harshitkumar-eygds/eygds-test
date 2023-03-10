@@ -699,3 +699,42 @@ SELECT dbo.GetAvgMarks(1) AS 'avg marks of student 1'
 
 SELECT * FROM subject2 WHERE studid=2
 SELECT avg(marks) FROM subject2 WHERE studid=1
+
+
+CREATE FUNCTION InsMarks()
+RETURNS varchar(50)
+	AS
+	BEGIN
+		DECLARE @result varchar(50)
+		INSERT INTO subject2 VALUES(8, 'ENGLISH', 100)
+		SET @result = 'passed'
+		RETURN @result
+	END
+
+	Select * from subject2
+
+	IF (@sub = (SELECT sub_name FROM subject2 WHERE studid = @Studid ) AND @marks = (SELECT marks FROM subject2 WHERE studid = @Studid))
+			SET @result = 'Values inserted'
+		ELSE
+			SET @result = 'Values not inserted'
+
+CREATE FUNCTION getmarks(@studid INT)
+RETURNS TABLE
+AS
+	RETURN SELECT * FROM subject2 WHERE studid = @studid
+
+SELECT * from getmarks(2)
+
+
+CREATE FUNCTION InsMarks()
+RETURNS TABLE
+	AS
+	RETURN
+	(
+		SELECT Studid, sub_name,marks FROM subject2
+	)
+
+INSERT INTO InsMarks() VALUES(8,'Maths',100)
+SELECT * FROM subject2
+DELETE FROM InsMarks() WHERE studid = 8 AND sub_name='Maths'
+UPDATE InsMarks() SET marks=50 WHERE Studid=8
