@@ -654,6 +654,9 @@ INSERT INTO subject2 VALUES
 
 DELETE FROM subject2 WHERE studid = 8
 
+SELECT * from student2
+SELECT * from subject2
+
 SELECT * FROM student2 left join subject2 on student2.studid = subject2.studid;
 SELECT * FROM subject2 right join  student2 on student2.studid = subject2.studid;
 
