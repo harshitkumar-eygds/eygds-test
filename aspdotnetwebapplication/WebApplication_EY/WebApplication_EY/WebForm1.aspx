@@ -8,7 +8,7 @@
 </head>
 <body>
     <form id="form1" runat="server">
-        <div style="height: 377px">
+        <div style="height: 999px">
             Calculator<br />
             <br />
             <br />
@@ -27,6 +27,35 @@
             <br />
             <br />
             <asp:Image ID="Image1" runat="server" Height="109px" ImageUrl="~/Images/download.jpg" Width="293px" />
+            <br />
+            <br />
+            <br />
+            <asp:ListBox ID="ListBox1" runat="server">
+                <asp:ListItem>Delhi</asp:ListItem>
+                <asp:ListItem>Delhi2</asp:ListItem>
+                <asp:ListItem>Chennai</asp:ListItem>
+                <asp:ListItem>Chennai2</asp:ListItem>
+            </asp:ListBox>
+            <asp:DropDownList ID="DropDownList1" runat="server">
+                <asp:ListItem>DElhi</asp:ListItem>
+                <asp:ListItem>DElhi2</asp:ListItem>
+                <asp:ListItem>DElhi3</asp:ListItem>
+                <asp:ListItem>DElhi4</asp:ListItem>
+            </asp:DropDownList>
+            <br />
+            <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Select city" />
+            <br />
+            <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
+            <br />
+            <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            database<br />
+            <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="database button" />
+            <br />
         </div>
     </form>
 </body>

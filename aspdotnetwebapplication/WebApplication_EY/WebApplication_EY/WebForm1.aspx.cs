@@ -5,6 +5,9 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
+using System.Data;
+using System.Data.SqlClient;
+
 namespace WebApplication_EY
 {
     public partial class WebForm1 : System.Web.UI.Page
@@ -26,6 +29,26 @@ namespace WebApplication_EY
             Response.Write(" Modulus result is : " + (num1 % num2));
 
 
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Label1.Text = "selected city from dropdown is : " + DropDownList1.SelectedItem.Text.ToString();
+
+            Label2.Text = "selected city from listbox is : " + ListBox1.SelectedItem.Text.ToString();
+
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            SqlConnection con = new SqlConnection
+                (
+                "Data source=Lab-Host\\SQLEXPRESS03;Initial Catalog=EYdatabase;Integrated Security=True"
+                );
+            con.Open();
+
+            Response.Write("Connection is succesfull");
         }
     }
 }

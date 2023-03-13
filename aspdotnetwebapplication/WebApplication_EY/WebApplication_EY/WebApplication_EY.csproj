@@ -73,6 +73,9 @@
     <Content Include="WebForm1.aspx" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ado_demo1.asps.ashx.cs">
+      <DependentUpon>ado_demo1.asps.ashx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -86,6 +89,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ado_demo1.asps.ashx" />
     <None Include="packages.config" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
