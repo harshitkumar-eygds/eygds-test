@@ -83,6 +83,24 @@
             <br />
             <br />
             <br />
+            DataBound control<br />
+            <asp:ListBox ID="ListBox2" runat="server" DataSourceID="SqlDataSource3bound" DataTextField="name" DataValueField="studid"></asp:ListBox>
+            <asp:SqlDataSource ID="SqlDataSource3bound" runat="server" ConnectionString="<%$ ConnectionStrings:EYdatabaseConnectionString %>" SelectCommand="SELECT * FROM [student2]"></asp:SqlDataSource>
+            <br />
+            <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource3bound" DataTextField="name" DataValueField="studid">
+            </asp:DropDownList>
+            <br />
+            <br />
+            <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource3bound" DataTextField="city" DataValueField="studid">
+            </asp:CheckBoxList>
+            <asp:RadioButtonList ID="RadioButtonList1" runat="server" DataSourceID="SqlDataSource2ey" DataTextField="sub_name" DataValueField="studid">
+            </asp:RadioButtonList>
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
         </div>
     </form>
 </body>
