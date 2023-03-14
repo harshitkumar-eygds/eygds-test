@@ -71,7 +71,7 @@
                     <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" Text="Display Calender" />
                 </td>
                 <td>
-                    <asp:Calendar ID="Calendar2" runat="server" OnSelectionChanged="Calendar2_SelectionChanged"></asp:Calendar>
+                    <asp:Calendar ID="Calendar2" runat="server" OnSelectionChanged="Calendar2_SelectionChanged" Visible="False"></asp:Calendar>
                 </td>
             </tr>
             <tr>
@@ -81,7 +81,7 @@
                     <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="Display Calender" />
                 </td>
                 <td>
-                    <asp:Calendar ID="Calendar3" runat="server" OnSelectionChanged="Calendar3_SelectionChanged"></asp:Calendar>
+                    <asp:Calendar ID="Calendar3" runat="server" OnSelectionChanged="Calendar3_SelectionChanged" Visible="False"></asp:Calendar>
                 </td>
             </tr>
             <tr>
