@@ -5,6 +5,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <style type="text/css">
+        .auto-style1 {
+            width: 100%;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -83,20 +88,50 @@
             <br />
             <br />
             <br />
-            DataBound control<br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <br />
+            <table class="auto-style1">
+                <tr>
+                    <td>DataBound control</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>
             <asp:ListBox ID="ListBox2" runat="server" DataSourceID="SqlDataSource3bound" DataTextField="name" DataValueField="studid"></asp:ListBox>
             <asp:SqlDataSource ID="SqlDataSource3bound" runat="server" ConnectionString="<%$ ConnectionStrings:EYdatabaseConnectionString %>" SelectCommand="SELECT * FROM [student2]"></asp:SqlDataSource>
-            <br />
+                    </td>
+                    <td>
             <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource3bound" DataTextField="name" DataValueField="studid">
             </asp:DropDownList>
-            <br />
-            <br />
+                    </td>
+                    <td>
             <asp:CheckBoxList ID="CheckBoxList1" runat="server" DataSourceID="SqlDataSource3bound" DataTextField="city" DataValueField="studid">
             </asp:CheckBoxList>
+                    </td>
+                    <td>
             <asp:RadioButtonList ID="RadioButtonList1" runat="server" DataSourceID="SqlDataSource2ey" DataTextField="sub_name" DataValueField="studid">
             </asp:RadioButtonList>
-            <br />
-            <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                </tr>
+            </table>
             <br />
             <br />
             <br />
