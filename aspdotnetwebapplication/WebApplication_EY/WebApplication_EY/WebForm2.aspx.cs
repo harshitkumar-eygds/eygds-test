@@ -26,8 +26,9 @@ namespace WebApplication_EY
             con.Open();
 
             SqlDataAdapter ad = new SqlDataAdapter("select * from subject2 where marks>80", con);
-            SqlDataAdapter radio = new SqlDataAdapter("select * from subject2 where marks>80", con);
-            SqlDataAdapter c = new SqlDataAdapter("select * from subject2 where marks>80", con);
+            SqlDataAdapter radio = new SqlDataAdapter("select studid from subject2 where marks>80", con);
+            SqlDataAdapter check = new SqlDataAdapter("select sub_name from subject2 where marks>80", con);
+            SqlDataAdapter dplist = new SqlDataAdapter("select  marks from subject2 where marks>80", con);
 
 
             DataSet ds = new DataSet();
@@ -36,6 +37,19 @@ namespace WebApplication_EY
 
             GridView1.DataSource = ds;
             GridView1.DataBind();
+
+            radio.Fill(ds);
+            RadioButtonList1.DataSource = ds;
+            RadioButtonList1.DataBind();
+
+            check.Fill(ds);
+            CheckBoxList1.DataSource = ds;
+            CheckBoxList1.DataBind();
+
+            dplist.Fill(ds);
+            DropDownList1.DataSource = ds;
+            DropDownList1.DataBind();
+
         }
     }
 }
