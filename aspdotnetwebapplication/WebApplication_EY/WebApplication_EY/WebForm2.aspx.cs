@@ -38,16 +38,27 @@ namespace WebApplication_EY
             GridView1.DataSource = ds;
             GridView1.DataBind();
 
+
+          //  DataSet a1 = new DataSet();
+
             radio.Fill(ds);
+
             RadioButtonList1.DataSource = ds;
+            RadioButtonList1.DataTextField = "studid";
+            RadioButtonList1.DataValueField = "studid";
             RadioButtonList1.DataBind();
+
 
             check.Fill(ds);
             CheckBoxList1.DataSource = ds;
+            CheckBoxList1.DataTextField = "sub_name";
+            CheckBoxList1.DataValueField = "sub_name";
             CheckBoxList1.DataBind();
 
             dplist.Fill(ds);
             DropDownList1.DataSource = ds;
+            DropDownList1.DataTextField = "marks";
+            DropDownList1.DataValueField = "marks";
             DropDownList1.DataBind();
 
         }
