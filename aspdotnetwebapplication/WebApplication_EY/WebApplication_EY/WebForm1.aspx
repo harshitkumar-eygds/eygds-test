@@ -67,8 +67,9 @@
             <asp:SqlDataSource ID="SqlDataSource1ey" runat="server" ConnectionString="<%$ ConnectionStrings:EYdatabaseConnectionString %>" SelectCommand="SELECT * FROM [student2]"></asp:SqlDataSource>
             <br />
             WAP to show student with marks&gt;70<br />
-            <asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource2ey">
+            <asp:GridView ID="GridView2" runat="server" AllowSorting="True" AutoGenerateColumns="False" DataSourceID="SqlDataSource2ey">
                 <Columns>
+                    <asp:CommandField ShowSelectButton="True" />
                     <asp:BoundField DataField="studid" HeaderText="studid" SortExpression="studid" />
                     <asp:BoundField DataField="sub_name" HeaderText="sub_name" SortExpression="sub_name" />
                     <asp:BoundField DataField="marks" HeaderText="marks" SortExpression="marks" />
