@@ -32,31 +32,29 @@ namespace WebApplication_EY
 
 
             DataSet ds = new DataSet();
-
             ad.Fill(ds);
-
             GridView1.DataSource = ds;
             GridView1.DataBind();
 
 
-          //  DataSet a1 = new DataSet();
-
-            radio.Fill(ds);
-
-            RadioButtonList1.DataSource = ds;
+            //  DataSet a1 = new DataSet();
+            DataSet ds1 = new DataSet();
+            radio.Fill(ds1);
+            RadioButtonList1.DataSource = ds1;
             RadioButtonList1.DataTextField = "studid";
             RadioButtonList1.DataValueField = "studid";
             RadioButtonList1.DataBind();
 
-
-            check.Fill(ds);
-            CheckBoxList1.DataSource = ds;
+            DataSet ds2 = new DataSet();
+            check.Fill(ds2);
+            CheckBoxList1.DataSource = ds2;
             CheckBoxList1.DataTextField = "sub_name";
             CheckBoxList1.DataValueField = "sub_name";
             CheckBoxList1.DataBind();
 
-            dplist.Fill(ds);
-            DropDownList1.DataSource = ds;
+            DataSet ds3 = new DataSet();
+            dplist.Fill(ds3);
+            DropDownList1.DataSource = ds3;
             DropDownList1.DataTextField = "marks";
             DropDownList1.DataValueField = "marks";
             DropDownList1.DataBind();

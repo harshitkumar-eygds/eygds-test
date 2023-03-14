@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<Advertisements>
+	<Ad>
+		<ImageUrl>~\Images\download.jpg</ImageUrl>
+		<NavigateUrl>https://www.bing.com/search?q=flower</NavigateUrl>
+		<AlternateText>
+			Order flowers, roses, gifts and more
+		</AlternateText>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>~\Images\forest.jpg</ImageUrl>
+		<NavigateUrl>https://www.bing.com/search?q=forest</NavigateUrl>
+		<AlternateText>
+			Go to forest, enjoy, camping
+		</AlternateText>
+	</Ad>
+
+	<Ad>
+		<ImageUrl>~\Images\sea.jpg</ImageUrl>
+		<NavigateUrl>https://www.bing.com/search?q=sea</NavigateUrl>
+		<AlternateText>
+			go to sea, boat, samundar ki saar
+		</AlternateText>
+	</Ad>
+</Advertisements>

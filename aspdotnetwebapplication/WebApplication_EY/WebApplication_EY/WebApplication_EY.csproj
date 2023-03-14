@@ -69,9 +69,12 @@
   <ItemGroup>
     <Content Include="Global.asax" />
     <Content Include="Images\download.jpg" />
+    <Content Include="Images\forest.jpg" />
+    <Content Include="Images\sea.jpg" />
     <Content Include="Web.config" />
     <Content Include="WebForm1.aspx" />
     <Content Include="WebForm2.aspx" />
+    <Content Include="XMLFile1.xml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ado_demo1.asps.ashx.cs">

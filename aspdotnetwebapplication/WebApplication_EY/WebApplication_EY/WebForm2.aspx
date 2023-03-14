@@ -9,6 +9,9 @@
         .auto-style1 {
             width: 100%;
         }
+        .auto-style2 {
+            width: 229px;
+        }
     </style>
 </head>
 <body>
@@ -31,12 +34,16 @@
                         <asp:CheckBoxList ID="CheckBoxList1" runat="server">
                         </asp:CheckBoxList>
                     </td>
-                    <td>
+                    <td class="auto-style2">
                         <asp:RadioButtonList ID="RadioButtonList1" runat="server">
                         </asp:RadioButtonList>
                     </td>
                 </tr>
             </table>
+            <br />
+            adrorator<br />
+            <asp:AdRotator ID="AdRotator1" runat="server" AdvertisementFile="~/XMLFile1.xml" />
+            <br />
         </div>
     </form>
 </body>
