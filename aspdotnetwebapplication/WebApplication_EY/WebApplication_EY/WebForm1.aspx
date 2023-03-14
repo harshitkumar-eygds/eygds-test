@@ -51,10 +51,18 @@
             <br />
             <br />
             <br />
+            <asp:ImageButton ID="ImageButton1" runat="server" ImageUrl="~/Images/download.jpg" PostBackUrl="https://www.google.com" />
+            <br />
+            <br />
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="https://www.google.com/">HyperLink</asp:HyperLink>
+            <br />
             <br />
             <br />
             database<br />
             <asp:Button ID="Button3" runat="server" OnClick="Button3_Click" Text="database button" />
+            <br />
+            <br />
+            <br />
             <br />
         </div>
     </form>
