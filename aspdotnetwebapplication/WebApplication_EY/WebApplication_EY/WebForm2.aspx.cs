@@ -60,5 +60,52 @@ namespace WebApplication_EY
             DropDownList1.DataBind();
 
         }
+
+        protected void Calendar1_SelectionChanged(object sender, EventArgs e)
+        {
+            Label2.Text = "Selected Date is : " +  Calendar1.SelectedDate.Date.ToString();
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+            Calendar2.Visible = true;
+            Calendar3.Visible = false;
+
+        }
+
+        protected void Button3_Click(object sender, EventArgs e)
+        {
+            Calendar2.Visible = false;
+            Calendar3.Visible = true;
+
+        }
+
+        protected void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void TextBox2_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Button4_Click(object sender, EventArgs e)
+        {
+            DateTime cin = Calendar2.SelectedDate.Date;
+            DateTime cout = Calendar3.SelectedDate.Date;
+
+            Label6.Text = $"You stayed from {cin} to {cout}. Your total stay is {cout - cin} ";
+        }
+
+        protected void Calendar2_SelectionChanged(object sender, EventArgs e)
+        {
+            TextBox1.Text = Calendar2.SelectedDate.Date.ToShortDateString().ToString();
+        }
+
+        protected void Calendar3_SelectionChanged(object sender, EventArgs e)
+        {
+            TextBox2.Text = Calendar3.SelectedDate.Date.ToShortDateString().ToString();
+        }
     }
 }
