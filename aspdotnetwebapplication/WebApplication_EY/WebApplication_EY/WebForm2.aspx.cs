@@ -94,8 +94,16 @@ namespace WebApplication_EY
         {
             DateTime cin = Calendar2.SelectedDate.Date;
             DateTime cout = Calendar3.SelectedDate.Date;
+            if (cout >= cin)
+            {
+                var output = (cout - cin).Days;
 
-            Label6.Text = $"You stayed from {cin} to {cout}. Your total stay is {cout - cin} ";
+                Label6.Text = $"You stayed from {cin.ToShortDateString()} to {cout.ToShortDateString()}. Your total stay is {output} ";
+            }
+            else 
+            {
+                Label6.Text = "Check IN date cannot be after Check OUT date. Please select dates again";
+            }
         }
 
         protected void Calendar2_SelectionChanged(object sender, EventArgs e)
