@@ -187,5 +187,49 @@ namespace WebApplication_EY
             Label9.Text = "Updated Successfully";
             Label9.Visible = true;
         }
+
+        protected void Button5_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            //int id = int.Parse(TextBox3.Text);
+            //string sub = TextBox4.Text;
+            //int marks = int.Parse(TextBox5.Text);
+            SqlCommand cmd = new SqlCommand("insert into subject2(studid, sub_name, marks) values( 10,'sst',100 )", con);
+            cmd.ExecuteNonQuery();
+
+            //Response.Write("Inserted successfully");
+            Label7.Text = "Inserted Hard Coded Successfully";
+            Label7.Visible = true;
+
+        }
+
+        protected void Button6_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            //int id = int.Parse(TextBox6.Text);
+            // string sub = TextBox4.Text;
+            //int marks = int.Parse(TextBox5.Text);
+            SqlCommand cmd = new SqlCommand("Delete from subject2 where studid = 10", con);
+            cmd.ExecuteNonQuery();
+
+            //Response.Write("Inserted successfully");
+            Label8.Text = "Deleted Hard Coded Successfully";
+            Label8.Visible = true;
+
+        }
+
+        protected void Button7_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            //int id = int.Parse(TextBox7.Text);
+            //string sub = TextBox8.Text;
+            //int marks = int.Parse(TextBox9.Text);
+            SqlCommand cmd = new SqlCommand("Update subject2 SET marks = 88  WHERE studid = 1 AND sub_name = 'English' ", con);
+            cmd.ExecuteNonQuery();
+
+            //Response.Write("Inserted successfully");
+            Label9.Text = "Updated Hard Coded Successfully";
+            Label9.Visible = true;
+        }
     }
 }

@@ -128,6 +128,7 @@
             <br />
             <br />
             <asp:Button ID="ins_data_button" runat="server" OnClick="ins_data_button_Click" Text="Insert Data" />
+            <asp:Button ID="Button5" runat="server" OnClick="Button5_Click" Text="Insert Hard Coded" />
             <br />
             <asp:Label ID="Label7" runat="server" Text="Label" Visible="False"></asp:Label>
         </asp:Panel>
@@ -139,6 +140,7 @@
             <br />
             <br />
             <asp:Button ID="del_data_button" runat="server" Text="Delete Data" OnClick="del_data_button_Click" />
+            <asp:Button ID="Button6" runat="server" OnClick="Button6_Click" Text="Delete Hard Coded" />
             <br />
             <asp:Label ID="Label8" runat="server" Text="Label" Visible="False"></asp:Label>
         </asp:Panel>
@@ -158,6 +160,7 @@
             <br />
             <br />
             <asp:Button ID="upd_data_button" runat="server" Text="Update Data" OnClick="upd_data_button_Click" />
+            <asp:Button ID="Button7" runat="server" OnClick="Button7_Click" Text="Upadate Hard Coded" />
             <br />
             <asp:Label ID="Label9" runat="server" Text="Label" Visible="False"></asp:Label>
         </asp:Panel>
