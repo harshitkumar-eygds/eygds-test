@@ -97,7 +97,6 @@ namespace WebApplication_EY
             if (cout >= cin)
             {
                 var output = (cout - cin).Days;
-
                 Label6.Text = $"You stayed from {cin.ToShortDateString()} to {cout.ToShortDateString()}. Your total stay is {output} ";
             }
             else 
