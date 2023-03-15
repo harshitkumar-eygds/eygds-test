@@ -114,5 +114,78 @@ namespace WebApplication_EY
         {
             TextBox2.Text = Calendar3.SelectedDate.Date.ToShortDateString().ToString();
         }
+
+        protected void displayall_Click(object sender, EventArgs e)
+        {
+            SqlDataAdapter ad = new SqlDataAdapter("select * from subject2", con);
+
+            DataSet ds = new DataSet();
+            ad.Fill(ds);
+            GridView2.DataSource = ds;
+            GridView2.DataBind();
+        }
+
+        protected void ins_panel_Click(object sender, EventArgs e)
+        {
+            inspanel.Visible = true;
+            delpanel.Visible = false;
+            updpanel.Visible = false;
+        }
+
+        protected void del_panel_button_Click(object sender, EventArgs e)
+        {
+            inspanel.Visible = false;
+            delpanel.Visible = true;
+            updpanel.Visible = false;
+        }
+
+        protected void upd_panel_button_Click(object sender, EventArgs e)
+        {
+            inspanel.Visible = false;
+            delpanel.Visible = false;
+            updpanel.Visible = true;
+        }
+
+        protected void ins_data_button_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            int id = int.Parse(TextBox3.Text);
+            string sub = TextBox4.Text;
+            int marks = int.Parse(TextBox5.Text);
+            SqlCommand cmd = new SqlCommand("insert into subject2(studid, sub_name, marks) values( '"+ id + "' , '" + sub + "'  , '" +marks + "' )", con);
+            cmd.ExecuteNonQuery();
+
+            //Response.Write("Inserted successfully");
+            Label7.Text = "Inserted Successfully";
+            Label7.Visible = true;
+        }
+
+        protected void del_data_button_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            int id = int.Parse(TextBox6.Text);
+           // string sub = TextBox4.Text;
+            //int marks = int.Parse(TextBox5.Text);
+            SqlCommand cmd = new SqlCommand("Delete from subject2 where studid = '"+ id +"' ", con);
+            cmd.ExecuteNonQuery();
+
+            //Response.Write("Inserted successfully");
+            Label8.Text = "Deleted Successfully";
+            Label8.Visible = true;
+        }
+
+        protected void upd_data_button_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            int id = int.Parse(TextBox7.Text);
+            string sub = TextBox8.Text;
+            int marks = int.Parse(TextBox9.Text);
+            SqlCommand cmd = new SqlCommand("Update subject2 SET marks = '"+ marks +"'  WHERE studid = '"+ id + "' AND sub_name = '" + sub + "' ", con);
+            cmd.ExecuteNonQuery();
+
+            //Response.Write("Inserted successfully");
+            Label9.Text = "Updated Successfully";
+            Label9.Visible = true;
+        }
     }
 }

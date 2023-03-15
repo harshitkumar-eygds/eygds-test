@@ -99,8 +99,68 @@
         <p>
             <asp:Label ID="Label5" runat="server" Text="Label"></asp:Label>
         </p>
-    </form>
     <p>
-        &nbsp;</p>
-</body>
+        <asp:GridView ID="GridView2" runat="server">
+        </asp:GridView>
+        </p>
+        <asp:Button ID="displayall" runat="server" OnClick="displayall_Click" Text="Display all" />
+        <br />
+        <br />
+        <asp:Button ID="ins_panel_button" runat="server" OnClick="ins_panel_Click" Text="Insert" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="del_panel_button" runat="server" OnClick="del_panel_button_Click" Text="Delete" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <asp:Button ID="upd_panel_button" runat="server" OnClick="upd_panel_button_Click" Text="Update" />
+        <br />
+        <br />
+        <br />
+&nbsp;<asp:Panel ID="inspanel" runat="server" Visible="False">
+            Enter Student ID :
+            <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Enter Subject Name :
+            <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Enter Marks :
+            <asp:TextBox ID="TextBox5" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="ins_data_button" runat="server" OnClick="ins_data_button_Click" Text="Insert Data" />
+            <br />
+            <asp:Label ID="Label7" runat="server" Text="Label" Visible="False"></asp:Label>
+        </asp:Panel>
+        <br />
+        <br />
+        <asp:Panel ID="delpanel" runat="server" Visible="False">
+            Enter Student ID to delete :
+            <asp:TextBox ID="TextBox6" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="del_data_button" runat="server" Text="Delete Data" OnClick="del_data_button_Click" />
+            <br />
+            <asp:Label ID="Label8" runat="server" Text="Label" Visible="False"></asp:Label>
+        </asp:Panel>
+        <br />
+        <br />
+        <asp:Panel ID="updpanel" runat="server" Visible="False">
+            Enter Student ID to update :
+            <asp:TextBox ID="TextBox7" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Enter Subject Name to update :
+            <asp:TextBox ID="TextBox8" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            Enter updated marks :
+            <asp:TextBox ID="TextBox9" runat="server"></asp:TextBox>
+            <br />
+            <br />
+            <asp:Button ID="upd_data_button" runat="server" Text="Update Data" OnClick="upd_data_button_Click" />
+            <br />
+            <asp:Label ID="Label9" runat="server" Text="Label" Visible="False"></asp:Label>
+        </asp:Panel>
+    </form>
+    </body>
 </html>
