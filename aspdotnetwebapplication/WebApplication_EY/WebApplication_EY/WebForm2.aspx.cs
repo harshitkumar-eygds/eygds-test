@@ -231,5 +231,22 @@ namespace WebApplication_EY
             Label9.Text = "Updated Hard Coded Successfully";
             Label9.Visible = true;
         }
+
+        protected void sql_reader_button_Click(object sender, EventArgs e)
+        {
+            con.Open();
+            SqlCommand cmd = new SqlCommand("select * from subject2",con);
+
+            SqlDataReader rdr = cmd.ExecuteReader();
+            sqlrdr_label.Text = "";
+
+
+            while (rdr.Read()) 
+            {
+                //Response.Write(rdr["studid"] + " " + rdr["sub_name"] + " " + rdr["marks"]);
+                sqlrdr_label.Text += rdr["studid"] + " " + rdr["sub_name"] + " " + rdr["marks"];
+                sqlrdr_label.Visible = true;
+            }
+        }
     }
 }

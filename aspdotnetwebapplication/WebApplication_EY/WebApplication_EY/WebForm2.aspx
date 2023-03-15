@@ -164,6 +164,14 @@
             <br />
             <asp:Label ID="Label9" runat="server" Text="Label" Visible="False"></asp:Label>
         </asp:Panel>
+        <p>
+            &nbsp;</p>
+        <p>
+            <asp:Button ID="sql_reader_button" runat="server" OnClick="sql_reader_button_Click" Text="SQL Reader" />
+        </p>
+        <p>
+            <asp:Label ID="sqlrdr_label" runat="server" Text="Label" Visible="False"></asp:Label>
+        </p>
     </form>
     </body>
 </html>
