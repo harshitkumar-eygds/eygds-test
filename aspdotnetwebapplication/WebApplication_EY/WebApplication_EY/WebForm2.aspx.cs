@@ -244,7 +244,7 @@ namespace WebApplication_EY
             while (rdr.Read()) 
             {
                 //Response.Write(rdr["studid"] + " " + rdr["sub_name"] + " " + rdr["marks"]);
-                sqlrdr_label.Text += rdr["studid"] + " " + rdr["sub_name"] + " " + rdr["marks"];
+                sqlrdr_label.Text += rdr["studid"] + " " + rdr["sub_name"] + " " + rdr["marks"] + " ";
                 sqlrdr_label.Visible = true;
             }
         }
