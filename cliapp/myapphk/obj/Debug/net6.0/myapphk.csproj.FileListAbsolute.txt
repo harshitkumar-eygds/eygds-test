@@ -1,0 +1,15 @@
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\bin\Debug\net6.0\myapphk.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\bin\Debug\net6.0\myapphk.deps.json
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\bin\Debug\net6.0\myapphk.runtimeconfig.json
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\bin\Debug\net6.0\myapphk.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\bin\Debug\net6.0\myapphk.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\myapphk.csproj.AssemblyReference.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\myapphk.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\myapphk.AssemblyInfoInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\myapphk.AssemblyInfo.cs
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\myapphk.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\myapphk.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\refint\myapphk.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\myapphk.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\myapphk.genruntimeconfig.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\cliapp\myapphk\obj\Debug\net6.0\ref\myapphk.dll
