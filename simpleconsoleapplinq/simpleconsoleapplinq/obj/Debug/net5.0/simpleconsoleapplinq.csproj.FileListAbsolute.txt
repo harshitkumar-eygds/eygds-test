@@ -1,0 +1,16 @@
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\bin\Debug\net5.0\simpleconsoleapplinq.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\bin\Debug\net5.0\simpleconsoleapplinq.deps.json
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\bin\Debug\net5.0\simpleconsoleapplinq.runtimeconfig.json
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\bin\Debug\net5.0\simpleconsoleapplinq.runtimeconfig.dev.json
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\bin\Debug\net5.0\simpleconsoleapplinq.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\bin\Debug\net5.0\ref\simpleconsoleapplinq.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\bin\Debug\net5.0\simpleconsoleapplinq.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\simpleconsoleapplinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\simpleconsoleapplinq.AssemblyInfoInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\simpleconsoleapplinq.AssemblyInfo.cs
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\simpleconsoleapplinq.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\simpleconsoleapplinq.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\ref\simpleconsoleapplinq.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\simpleconsoleapplinq.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\simpleconsoleapplinq.genruntimeconfig.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\simpleconsoleapplinq\simpleconsoleapplinq\obj\Debug\net5.0\simpleconsoleapplinq.csproj.AssemblyReference.cache
