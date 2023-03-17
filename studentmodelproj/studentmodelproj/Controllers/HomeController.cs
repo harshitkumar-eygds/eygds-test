@@ -45,6 +45,9 @@ namespace studentmodelproj.Controllers
 
             var res = (from s in std select s);
             ViewBag.result = res;
+            ViewBag.Count = res.Count();
+            ViewBag.max = (from s in std select s.stud_addno).Max();
+            ViewData["details"] = std;
 
             return View();
         }

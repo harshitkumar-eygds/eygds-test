@@ -1,4 +1,4 @@
-﻿@Model  studentmodelproj.Models.Student;
+﻿@Model studentmodelproj.Models.Student;
 
 @{
     ViewBag.Title = "Student";
@@ -6,8 +6,20 @@
 
 <h2>Student</h2>
 <div>
+    <p>Max count : @ViewBag.Count and max : @ViewBag.max</p>
     <ul>
         @foreach (var i in ViewBag.Result)
+        {
+            <li>
+                <p>Student ID : @i.stud_id </p>
+                <p>Student Name : @i.stud_name </p>
+                <p>Student Addmission Number : @i.stud_addno </p>
+                <p>Student Class : @i.stud_class </p>
+                <p>Student Gender : @i.stud_gender </p>
+            </li>
+        }
+
+        @foreach (var i in ViewData["details"] as List<studentmodelproj.Models.Student>)
         {
             <li>
                 <p>Student ID : @i.stud_id </p>
