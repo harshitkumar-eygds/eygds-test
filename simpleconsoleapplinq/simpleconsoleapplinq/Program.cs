@@ -12,6 +12,18 @@ namespace simpleconsoleapplinq
         public string emp_gender { get; set; }
         public int emp_salary { get; set; }
     }
+
+    class student 
+    {
+        public int stud_id { get; set; }
+        public string stud_name { get; set; }
+        public int std_id { get; set; }
+    }
+    class standard
+    {
+        public int std_id { get; set; }
+        public int std_name { get; set; }
+    }
     class Program
     {
         static void Main(string[] args)
@@ -114,90 +126,164 @@ namespace simpleconsoleapplinq
             //    Console.WriteLine(item);
             //}
 
-            int[] num =  { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 21, 234, 34, 456, 543, 23, 57, 8, 3, 23, 567, 234, 436, 7, 88, 654, 787, 34, 678, 44, 56, 78, 90, 09, 87, 65, 43, 211, 112, 13, 14, 15, 254, 36, 853 };
-            var result = num.Where(a => (a >= 15 && a <= 35) || (a<=10 && a>=5));
-            Console.WriteLine("number between 15 and 35");
-            ;
-            foreach (var i in result) 
-            {
-                Console.WriteLine(i);
-            }
+            //int[] num =  { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 21, 234, 34, 456, 543, 23, 57, 8, 3, 23, 567, 234, 436, 7, 88, 654, 787, 34, 678, 44, 56, 78, 90, 09, 87, 65, 43, 211, 112, 13, 14, 15, 254, 36, 853 };
+            //var result = num.Where(a => (a >= 15 && a <= 35) || (a<=10 && a>=5));
+            //Console.WriteLine("number between 15 and 35");
+            //;
+            //foreach (var i in result) 
+            //{
+            //    Console.WriteLine(i);
+            //}
 
-            employee[] emp = 
-            {
-                new employee() { emp_id= 101 , emp_name ="aaa" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100000} ,
-                new employee() { emp_id= 102 , emp_name ="bbb" , emp_gender = "F" , emp_deptid=10 , emp_salary = 100001} ,
-                new employee() { emp_id= 201 , emp_name ="ccc" , emp_gender = "F" , emp_deptid=20 , emp_salary = 100002} ,
-                new employee() { emp_id= 202 , emp_name ="ddd" , emp_gender = "M" , emp_deptid=20 , emp_salary = 100003} ,
-                new employee() { emp_id= 103 , emp_name ="eee" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100004} ,
-                new employee() { emp_id= 203 , emp_name ="fff" , emp_gender = "F" , emp_deptid=20 , emp_salary = 100005} ,
-                new employee() { emp_id= 104 , emp_name ="ggg" , emp_gender = "F" , emp_deptid=10 , emp_salary = 100006} ,
-                new employee() { emp_id= 105 , emp_name ="hhh" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100007}
-            };
+            //employee[] emp = 
+            //{
+            //    new employee() { emp_id= 101 , emp_name ="aaa" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100000} ,
+            //    new employee() { emp_id= 102 , emp_name ="bbb" , emp_gender = "F" , emp_deptid=10 , emp_salary = 100001} ,
+            //    new employee() { emp_id= 201 , emp_name ="ccc" , emp_gender = "F" , emp_deptid=20 , emp_salary = 100002} ,
+            //    new employee() { emp_id= 202 , emp_name ="ddd" , emp_gender = "M" , emp_deptid=20 , emp_salary = 100003} ,
+            //    new employee() { emp_id= 103 , emp_name ="eee" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100004} ,
+            //    new employee() { emp_id= 203 , emp_name ="fff" , emp_gender = "F" , emp_deptid=20 , emp_salary = 100005} ,
+            //    new employee() { emp_id= 104 , emp_name ="ggg" , emp_gender = "F" , emp_deptid=10 , emp_salary = 100006} ,
+            //    new employee() { emp_id= 105 , emp_name ="hhh" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100007}
+            //};
 
-            var emp_result = emp.Where(a => a.emp_gender == "M");
-            Console.WriteLine("all male employees are : ");
-            foreach (var i in emp_result) 
-            {
-                Console.WriteLine("{0} : {1} ", i.emp_id , i.emp_name);
-            }
+            //var emp_result = emp.Where(a => a.emp_gender == "M");
+            //Console.WriteLine("all male employees are : ");
+            //foreach (var i in emp_result) 
+            //{
+            //    Console.WriteLine("{0} : {1} ", i.emp_id , i.emp_name);
+            //}
 
-            int[] num2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 21, 234, 34, 456, 543, 23, 57, 8, 3, 23, 567, 234, 436, 7, 88, 654, 787, 34, 678, 44, 56, 78, 90, 09, 87, 65, 43, 211, 112, 13, 14, 15, 254, 36, 853 };
-            int[] num3 = { 33, 2, 3, 4, 5, 6, 36, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 };
-            //n - number i - indexes
-            var result1 = num3.Where((n,i) => n%3 == 0 && i >= 6);
-            Console.WriteLine("divisible by 3 and greater then 6");
-            ;
-            foreach (var i in result1)
-            {
-                Console.WriteLine(i);
-            }
+            //int[] num2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 21, 234, 34, 456, 543, 23, 57, 8, 3, 23, 567, 234, 436, 7, 88, 654, 787, 34, 678, 44, 56, 78, 90, 09, 87, 65, 43, 211, 112, 13, 14, 15, 254, 36, 853 };
+            //int[] num3 = { 33, 2, 3, 4, 5, 6, 36, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 };
+            ////n - number i - indexes
+            //var result1 = num3.Where((n,i) => n%3 == 0 && i >= 6);
+            //Console.WriteLine("divisible by 3 and greater then 6");
+            //;
+            //foreach (var i in result1)
+            //{
+            //    Console.WriteLine(i);
+            //}
 
-            string[] words = { "falcon", "oak", "sky", "cloud", "rain", "tree", "master", "school" };
-            Console.WriteLine("Element at : " + words.ElementAt(2));
-            Console.WriteLine("Words.first() : " + words.First());
-            Console.WriteLine("Words.Last() : " + words.Last());
+            //string[] words = { "falcon", "oak", "sky", "cloud", "rain", "tree", "master", "school" };
+            //Console.WriteLine("Element at : " + words.ElementAt(2));
+            //Console.WriteLine("Words.first() : " + words.First());
+            //Console.WriteLine("Words.Last() : " + words.Last());
 
-            Console.WriteLine("words.First(word => word.Length == 3) : " + words.First(word => word.Length == 3));
-            Console.WriteLine("words.Last(word => word.Length == 3) : " + words.Last(word => word.Length == 3));
+            //Console.WriteLine("words.First(word => word.Length == 3) : " + words.First(word => word.Length == 3));
+            //Console.WriteLine("words.Last(word => word.Length == 3) : " + words.Last(word => word.Length == 3));
 
-            int[] vals = { 1, 2, 3 };
+            //int[] vals = { 1, 2, 3 };
 
-            var vals1 = vals.Append(4).Prepend(0);
-            //vals1 = vals1.Prepend(0);
+            //var vals1 = vals.Append(4).Prepend(0);
+            ////vals1 = vals1.Prepend(0);
 
-            Console.WriteLine(string.Join(",",vals1));
-            object vals2 = vals.Append(2);
+            //Console.WriteLine(string.Join(",",vals1));
+            //object vals2 = vals.Append(2);
 
-            Console.WriteLine("powered");
-            var powered = num3.Select(e => Math.Pow(e, 2));
-            Console.WriteLine(string.Join(',',powered));
+            //Console.WriteLine("powered");
+            //var powered = num3.Select(e => Math.Pow(e, 2));
+            //Console.WriteLine(string.Join(',',powered));
 
-            Console.WriteLine("word length ");
-            var wordlen = words.Select(e => e.Length);
-            Console.WriteLine(string.Join(',',wordlen));
+            //Console.WriteLine("word length ");
+            //var wordlen = words.Select(e => e.Length);
+            //Console.WriteLine(string.Join(',',wordlen));
+
+            //Console.WriteLine();
+            //Console.WriteLine(); 
+            //Console.WriteLine("=============== oftype ===============");
+            //Console.WriteLine();
+            //Console.WriteLine();
+            //IList mixedList = new ArrayList();
+            //mixedList.Add(0);
+            //mixedList.Add("abc");
+            //mixedList.Add("bbhg");
+            //mixedList.Add("rahul");
+            //mixedList.Add("harshit");
+            //mixedList.Add('c');
+            //mixedList.Add('b');
+            //mixedList.Add('a');
+            //mixedList.Add(9.9f);
+            //mixedList.Add(9.98f);
+            //mixedList.Add(9.0987768676);
+            //mixedList.Add(9.99898665);
+            //mixedList.Add(29);
+            //mixedList.Add(93);
+            //mixedList.Add(943);
+
+            //var stringresult = from s in mixedList.OfType<string>() select s;
+            //var charresult = from s in mixedList.OfType<char>() select s;
+            //var intresult = from s in mixedList.OfType<int>() select s;
+            //var floatresult = from s in mixedList.OfType<float>() select s;
+            //var doubleresult = from s in mixedList.OfType<double>() select s;
+            //Console.WriteLine("printing string result using for each loop");
+            //foreach (var i in stringresult) 
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine("printing string result using string join");
+            //Console.WriteLine(String.Join(",",stringresult));
+
+            //Console.WriteLine("printing char result using for each loop");
+            //foreach (var i in charresult)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine("printing char result using string join");
+            //Console.WriteLine(String.Join(",", charresult));
+
+            //Console.WriteLine("printing int result using for each loop");
+            //foreach (var i in intresult)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine("printing int result using string join");
+            //Console.WriteLine(String.Join(",", intresult));
+
+            //Console.WriteLine("printing float result using for each loop");
+
+            //foreach (var i in floatresult)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine("printing float result using string join");
+            //Console.WriteLine(String.Join(",", floatresult));
+
+            //Console.WriteLine("printing double result using for each loop");
+
+            //foreach (var i in doubleresult)
+            //{
+            //    Console.WriteLine(i);
+            //}
+            //Console.WriteLine("printing double result using string join");
+            //Console.WriteLine(String.Join(",", doubleresult));
 
 
-            IList mixedList = new ArrayList();
-            mixedList.Add(0);
-            mixedList.Add("abc");
-            mixedList.Add("bbhg");
-            mixedList.Add(9);
+           // int[][] jagarray =
+           //     {
+           //      new[] { 1,2,3},
+           //      new[] { 4,5,6},
+           //      new[] { 44,5,6,22,3,1,8}
+           // };
 
-            var stringresult = from s in mixedList.OfType<string>() select s;
-            var intresult = from s in mixedList.OfType<int>() select s;
-            Console.WriteLine("printing string result using for each loop");
-            foreach (var i in stringresult) 
-            {
-                Console.WriteLine(i);
-            }
-            Console.WriteLine("printing string result using string join");
-            Console.WriteLine(String.Join(",",stringresult));
+           // var resl = jagarray.SelectMany(a => a).OrderBy(x => x);
+           // var res2 = jagarray.SelectMany(a => a).OrderBy(x => -x);
+           // var res3 = jagarray.SelectMany(a => a).OrderByDescending(x => x);
+           //// var resl2 = jagarray.Select(a => a).OrderBy(x => x);
+           // Console.WriteLine(string.Join(",",resl));
+           // Console.WriteLine(string.Join(",", res2));
+           // Console.WriteLine(string.Join(",", res3));
+           // //foreach (var i in resl2) 
+           // //{
+           // //    Console.WriteLine(i);
+           // //}
+           // //Console.WriteLine(string.Join(",", resl2));
 
-            foreach (var i in intresult)
-            {
-                Console.WriteLine(i);
-            }
+            IList<student> student_list = new List<student>() { student }
+
+
+
+
 
 
 
