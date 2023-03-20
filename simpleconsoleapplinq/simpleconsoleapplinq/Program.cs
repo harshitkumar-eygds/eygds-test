@@ -141,6 +141,27 @@ namespace simpleconsoleapplinq
                 Console.WriteLine("{0} : {1} ", i.emp_id , i.emp_name);
             }
 
+            int[] num2 = { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 21, 234, 34, 456, 543, 23, 57, 8, 3, 23, 567, 234, 436, 7, 88, 654, 787, 34, 678, 44, 56, 78, 90, 09, 87, 65, 43, 211, 112, 13, 14, 15, 254, 36, 853 };
+            int[] num3 = { 33, 2, 3, 4, 5, 6, 36, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30 };
+            //n - number i - indexes
+            var result1 = num3.Where((n,i) => n%3 == 0 && i >= 6);
+            Console.WriteLine("divisible by 3 and greater then 6");
+            ;
+            foreach (var i in result1)
+            {
+                Console.WriteLine(i);
+            }
+
+            string[] words = { "falcon", "oak", "sky", "cloud", "rain", "tree", "master", "school" };
+            Console.WriteLine("Element at : " + words.ElementAt(2));
+            Console.WriteLine("Words.first() : " + words.First());
+            Console.WriteLine("Words.Last() : " + words.Last());
+
+            Console.WriteLine("words.First(word => word.Length == 3) : " + words.First(word => word.Length == 3));
+            Console.WriteLine("words.Last(word => word.Length == 3) : " + words.Last(word => word.Length == 3));
+
+
+
 
             Console.ReadKey();
 
