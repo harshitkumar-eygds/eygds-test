@@ -160,7 +160,12 @@ namespace simpleconsoleapplinq
             Console.WriteLine("words.First(word => word.Length == 3) : " + words.First(word => word.Length == 3));
             Console.WriteLine("words.Last(word => word.Length == 3) : " + words.Last(word => word.Length == 3));
 
+            int[] vals = { 1, 2, 3 };
 
+            var vals1 = vals.Append(4).Prepend(0);
+            //vals1 = vals1.Prepend(0);
+
+            Console.WriteLine(string.Join(",",vals1));
 
 
             Console.ReadKey();
