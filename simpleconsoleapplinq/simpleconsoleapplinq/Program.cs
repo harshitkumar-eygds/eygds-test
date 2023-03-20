@@ -86,9 +86,35 @@ namespace simpleconsoleapplinq
             Console.WriteLine("maximum salary is {0} " , maxsal );
             Console.WriteLine("minimum salary is {0} ", minsal);
 
+            var query1 = from i in emp select i.emp_gender;
+            Console.WriteLine("Employee details : ");
+            foreach (var item in query1) 
+            {
+                Console.WriteLine(item); ;
+            }
 
+            Console.WriteLine("========= Lamda Expression ======");
+
+            var selectresult1 = emp.Select(s => new { Name = s.emp_name, Gender = s.emp_gender });
+
+            foreach (var item in selectresult1)
+            {
+                Console.WriteLine("Employee name : {0}, Gender is : {1}" , item.Name, item.Gender);
+            }
+
+            Console.WriteLine("========= where lamda expression");
+
+            Console.WriteLine("list of names of female employees are : ");
+
+            var gen = emp.Where(c => c.emp_gender == "F").Select(s => s.emp_name);
+
+            foreach (var item in gen) 
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
+
         }
     }
 }
