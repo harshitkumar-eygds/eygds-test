@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
 namespace simpleconsoleapplinq
 {
     class employee 
@@ -166,6 +167,38 @@ namespace simpleconsoleapplinq
             //vals1 = vals1.Prepend(0);
 
             Console.WriteLine(string.Join(",",vals1));
+            object vals2 = vals.Append(2);
+
+            Console.WriteLine("powered");
+            var powered = num3.Select(e => Math.Pow(e, 2));
+            Console.WriteLine(string.Join(',',powered));
+
+            Console.WriteLine("word length ");
+            var wordlen = words.Select(e => e.Length);
+            Console.WriteLine(string.Join(',',wordlen));
+
+
+            IList mixedList = new ArrayList();
+            mixedList.Add(0);
+            mixedList.Add("abc");
+            mixedList.Add("bbhg");
+            mixedList.Add(9);
+
+            var stringresult = from s in mixedList.OfType<string>() select s;
+            var intresult = from s in mixedList.OfType<int>() select s;
+            Console.WriteLine("printing string result using for each loop");
+            foreach (var i in stringresult) 
+            {
+                Console.WriteLine(i);
+            }
+            Console.WriteLine("printing string result using string join");
+            Console.WriteLine(String.Join(",",stringresult));
+
+            foreach (var i in intresult)
+            {
+                Console.WriteLine(i);
+            }
+
 
 
             Console.ReadKey();
