@@ -114,13 +114,33 @@ namespace simpleconsoleapplinq
             //}
 
             int[] num =  { 1, 2, 3, 4, 5, 6, 7, 8, 9, 0, 11, 21, 234, 34, 456, 543, 23, 57, 8, 3, 23, 567, 234, 436, 7, 88, 654, 787, 34, 678, 44, 56, 78, 90, 09, 87, 65, 43, 211, 112, 13, 14, 15, 254, 36, 853 };
-            var result = num.Where(a => a >= 15 && a <= 35);
+            var result = num.Where(a => (a >= 15 && a <= 35) || (a<=10 && a>=5));
             Console.WriteLine("number between 15 and 35");
             ;
             foreach (var i in result) 
             {
                 Console.WriteLine(i);
             }
+
+            employee[] emp = 
+            {
+                new employee() { emp_id= 101 , emp_name ="aaa" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100000} ,
+                new employee() { emp_id= 102 , emp_name ="bbb" , emp_gender = "F" , emp_deptid=10 , emp_salary = 100001} ,
+                new employee() { emp_id= 201 , emp_name ="ccc" , emp_gender = "F" , emp_deptid=20 , emp_salary = 100002} ,
+                new employee() { emp_id= 202 , emp_name ="ddd" , emp_gender = "M" , emp_deptid=20 , emp_salary = 100003} ,
+                new employee() { emp_id= 103 , emp_name ="eee" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100004} ,
+                new employee() { emp_id= 203 , emp_name ="fff" , emp_gender = "F" , emp_deptid=20 , emp_salary = 100005} ,
+                new employee() { emp_id= 104 , emp_name ="ggg" , emp_gender = "F" , emp_deptid=10 , emp_salary = 100006} ,
+                new employee() { emp_id= 105 , emp_name ="hhh" , emp_gender = "M" , emp_deptid=10 , emp_salary = 100007}
+            };
+
+            var emp_result = emp.Where(a => a.emp_gender == "M");
+            Console.WriteLine("all male employees are : ");
+            foreach (var i in emp_result) 
+            {
+                Console.WriteLine("{0} : {1} ", i.emp_id , i.emp_name);
+            }
+
 
             Console.ReadKey();
 
