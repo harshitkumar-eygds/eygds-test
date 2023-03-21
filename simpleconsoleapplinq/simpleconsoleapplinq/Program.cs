@@ -22,7 +22,7 @@ namespace simpleconsoleapplinq
     class standard
     {
         public int std_id { get; set; }
-        public int std_name { get; set; }
+        public string std_name { get; set; }
     }
     class Program
     {
@@ -259,30 +259,59 @@ namespace simpleconsoleapplinq
             //Console.WriteLine(String.Join(",", doubleresult));
 
 
-           // int[][] jagarray =
-           //     {
-           //      new[] { 1,2,3},
-           //      new[] { 4,5,6},
-           //      new[] { 44,5,6,22,3,1,8}
-           // };
+            // int[][] jagarray =
+            //     {
+            //      new[] { 1,2,3},
+            //      new[] { 4,5,6},
+            //      new[] { 44,5,6,22,3,1,8}
+            // };
 
-           // var resl = jagarray.SelectMany(a => a).OrderBy(x => x);
-           // var res2 = jagarray.SelectMany(a => a).OrderBy(x => -x);
-           // var res3 = jagarray.SelectMany(a => a).OrderByDescending(x => x);
-           //// var resl2 = jagarray.Select(a => a).OrderBy(x => x);
-           // Console.WriteLine(string.Join(",",resl));
-           // Console.WriteLine(string.Join(",", res2));
-           // Console.WriteLine(string.Join(",", res3));
-           // //foreach (var i in resl2) 
-           // //{
-           // //    Console.WriteLine(i);
-           // //}
-           // //Console.WriteLine(string.Join(",", resl2));
+            // var resl = jagarray.SelectMany(a => a).OrderBy(x => x);
+            // var res2 = jagarray.SelectMany(a => a).OrderBy(x => -x);
+            // var res3 = jagarray.SelectMany(a => a).OrderByDescending(x => x);
+            //// var resl2 = jagarray.Select(a => a).OrderBy(x => x);
+            // Console.WriteLine(string.Join(",",resl));
+            // Console.WriteLine(string.Join(",", res2));
+            // Console.WriteLine(string.Join(",", res3));
+            // //foreach (var i in resl2) 
+            // //{
+            // //    Console.WriteLine(i);
+            // //}
+            // //Console.WriteLine(string.Join(",", resl2));
 
-            IList<student> student_list = new List<student>() { student }
+            IList<student> student_list = new List<student>() {
+            new student() { std_id = 1 , stud_name = "harshit1" , stud_id = 1},
+            new student() { std_id = 1 , stud_name = "harshit2" , stud_id = 2},
+            new student() { std_id = 1 , stud_name = "harshit3" , stud_id = 3},
+            new student() { std_id = 1 , stud_name = "harshit4" , stud_id = 4},
+            new student() { std_id = 1 , stud_name = "harshit5" , stud_id = 5},
+            new student() { std_id = 3 , stud_name = "harshit6" , stud_id = 6}
+            };
 
+            IList<standard> standard_list = new List<standard>() {
+            new standard() { std_id = 1 , std_name = "harshit1" },
+            new standard() { std_id = 1 , std_name = "harshit2" },
+            new standard() { std_id = 1 , std_name = "harshit3" }
+            };
 
+            var groupjoin = standard_list.GroupJoin
+                (
+                    std => std.std_id,
+                    s => s.std_id,
+                    (std, studentsGroup) => new
+                    {
+                        Students = studentsGroup,
+                        StandrdFullName = std.StandardName
+                    }
+                );
 
+            foreach (var item in groupjoin) 
+            {
+                Console.WriteLine(item.StandrdFullName);
+
+                foreach(var stud in item.Students)
+                    Console.WriteLine(stud.StudentName);
+            }
 
 
 
