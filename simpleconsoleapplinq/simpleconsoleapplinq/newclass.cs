@@ -161,7 +161,21 @@ namespace simpleconsoleapplinq
                 Console.WriteLine(i);
 
 
+            Console.WriteLine();
+            Console.WriteLine();
+            Console.WriteLine("==== to array =======");
 
+            List<string> countries = new List<string> { "india" , "usa" , "UK" , "Canada" , "Mexico"};
+
+            string[] countryarray = countries.ToArray();
+
+            foreach (var i in countryarray) 
+            {
+                Console.WriteLine(i) ;
+            }
+
+            Console.WriteLine("contries type : " + countries.GetType().Name);
+            Console.WriteLine("countryarray type : " + countryarray.GetType().Name);
 
 
 
