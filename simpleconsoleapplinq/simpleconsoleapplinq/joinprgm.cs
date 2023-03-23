@@ -101,6 +101,70 @@ namespace simpleconsoleapplinq
             {
                 Console.WriteLine("Name : " + i.EmployeeName + " city: " + i.DepartmentName);
             }
+
+            //cross join
+            Console.WriteLine();
+            Console.WriteLine("Cross Join");
+            Console.WriteLine();
+            var res4 = from e1 in emp1
+                       from e2 in emp2
+                       select new
+                       {
+                           EmployeName = e1.name,
+                           City = e2.city
+                       };
+
+            foreach (var i in res4) 
+            {
+                Console.WriteLine("Name : {0} City: {1}" , i.EmployeName, i.City);
+            }
+
+            Console.WriteLine( );
+            Console.WriteLine();
+
+            string[] num1 = { "india" , "China" , "UK" , "USA" };
+            string[] num2 = { "uk" , "USA" , "Australia" };
+
+            var result1 = num1.Union(num2);
+            Console.WriteLine("union");
+            foreach (var i in result1) 
+            {
+                Console.WriteLine(i);
+            }
+
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+            var result2 = num1.Intersect(num2);
+            Console.WriteLine("Intersect");
+            foreach (var i in result2)
+            {
+                Console.WriteLine(i);
+            }
+
+
+            Console.WriteLine();
+            Console.WriteLine();
+
+
+            var result3 = num1.Distinct();
+            Console.WriteLine("Distinct");
+            foreach (var i in result3)
+            {
+                Console.WriteLine(i);
+            }
+
+
+            var result4 = num1.Except(num2);
+            Console.WriteLine("Except");
+            foreach (var i in result4)
+            {
+                Console.WriteLine(i);
+            }
+
+
+
         }
     }
 }
