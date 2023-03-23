@@ -45,7 +45,7 @@ namespace simpleconsoleapplinq
                 new employee2 () { id = 7 , salary = 870000 , city = "Delhi7"}
             };
 
-
+            //join using query
             var res = from e1 in emp1
                       join e2 in emp2
                       on e1.id equals e2.id
@@ -55,10 +55,30 @@ namespace simpleconsoleapplinq
                           Emp_Salary = e2.salary
                       };
 
+
+            //display
             foreach (var i in res) 
             {
                 Console.WriteLine(" Name : " + i.Emp_name + " Salary : " + i.Emp_Salary);
             }
+
+            var res2 = emp1.Join(emp2,
+                                e1 => e1.id,
+                                e2 => e2.id,
+                                (e1, e2) => new 
+                                {
+                                    EmployeeName = e1.name,
+                                    EmployeeSalary = e2.salary
+                                }
+                                );
+            //diplay
+
+            Console.WriteLine("Using lamda expression");
+            foreach (var i in res2)
+            {
+                Console.WriteLine(" Name : " + i.EmployeeName + " Salary : " + i.EmployeeSalary);
+            }
+
         }
     }
 }
