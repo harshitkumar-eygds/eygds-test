@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="EYdatabase" Class="DataClasses1DataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="WebSettings" ConnectionString="Data Source=Lab-Host\SQLEXPRESS03;Initial Catalog=EYdatabase;Integrated Security=True" SettingsObjectName="System.Configuration.ConfigurationManager.ConnectionStrings" SettingsPropertyName="EYdatabaseConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.subject2" Member="subject2s">
+    <Type Name="subject2">
+      <Column Name="studid" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="sub_name" Type="System.String" DbType="VarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="marks" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

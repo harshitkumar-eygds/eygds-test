@@ -738,3 +738,5 @@ INSERT INTO InsMarks() VALUES(8,'Maths',100)
 SELECT * FROM subject2
 DELETE FROM InsMarks() WHERE studid = 8 AND sub_name='Maths'
 UPDATE InsMarks() SET marks=50 WHERE Studid=8
+
+select * from subject2

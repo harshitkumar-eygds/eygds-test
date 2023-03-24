@@ -156,6 +156,10 @@ namespace simpleconsoleapplinq
             }
 
 
+            Console.WriteLine();
+            Console.WriteLine();
+
+
             var result4 = num1.Except(num2);
             Console.WriteLine("Except");
             foreach (var i in result4)

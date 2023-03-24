@@ -6,4 +6,9 @@
   <PropertyGroup>
     <ActiveDebugProfile>simpleconsoleapplinq</ActiveDebugProfile>
   </PropertyGroup>
+  <ItemGroup>
+    <None Update="DataBase.dbml">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
 </Project>
