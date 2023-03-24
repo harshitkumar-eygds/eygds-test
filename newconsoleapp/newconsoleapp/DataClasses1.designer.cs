@@ -30,6 +30,9 @@ namespace newconsoleapp
 		
     #region Extensibility Method Definitions
     partial void OnCreated();
+    partial void Insertstudentmark(studentmark instance);
+    partial void Updatestudentmark(studentmark instance);
+    partial void Deletestudentmark(studentmark instance);
     #endregion
 		
 		public DataClasses1DataContext() : 
@@ -62,41 +65,84 @@ namespace newconsoleapp
 			OnCreated();
 		}
 		
-		public System.Data.Linq.Table<subject2> subject2s
+		public System.Data.Linq.Table<studentmark> studentmarks
 		{
 			get
 			{
-				return this.GetTable<subject2>();
+				return this.GetTable<studentmark>();
 			}
 		}
 	}
 	
-	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.subject2")]
-	public partial class subject2
+	[global::System.Data.Linq.Mapping.TableAttribute(Name="dbo.studentmarks")]
+	public partial class studentmark : INotifyPropertyChanging, INotifyPropertyChanged
 	{
 		
-		private int _studid;
+		private static PropertyChangingEventArgs emptyChangingEventArgs = new PropertyChangingEventArgs(String.Empty);
+		
+		private int _id;
+		
+		private string _stud_name;
 		
 		private string _sub_name;
 		
 		private int _marks;
 		
-		public subject2()
+    #region Extensibility Method Definitions
+    partial void OnLoaded();
+    partial void OnValidate(System.Data.Linq.ChangeAction action);
+    partial void OnCreated();
+    partial void OnidChanging(int value);
+    partial void OnidChanged();
+    partial void Onstud_nameChanging(string value);
+    partial void Onstud_nameChanged();
+    partial void Onsub_nameChanging(string value);
+    partial void Onsub_nameChanged();
+    partial void OnmarksChanging(int value);
+    partial void OnmarksChanged();
+    #endregion
+		
+		public studentmark()
 		{
+			OnCreated();
 		}
 		
-		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_studid", DbType="Int NOT NULL")]
-		public int studid
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_id", DbType="Int NOT NULL", IsPrimaryKey=true)]
+		public int id
 		{
 			get
 			{
-				return this._studid;
+				return this._id;
 			}
 			set
 			{
-				if ((this._studid != value))
+				if ((this._id != value))
 				{
-					this._studid = value;
+					this.OnidChanging(value);
+					this.SendPropertyChanging();
+					this._id = value;
+					this.SendPropertyChanged("id");
+					this.OnidChanged();
+				}
+			}
+		}
+		
+		[global::System.Data.Linq.Mapping.ColumnAttribute(Storage="_stud_name", DbType="VarChar(50) NOT NULL", CanBeNull=false)]
+		public string stud_name
+		{
+			get
+			{
+				return this._stud_name;
+			}
+			set
+			{
+				if ((this._stud_name != value))
+				{
+					this.Onstud_nameChanging(value);
+					this.SendPropertyChanging();
+					this._stud_name = value;
+					this.SendPropertyChanged("stud_name");
+					this.Onstud_nameChanged();
 				}
 			}
 		}
@@ -112,7 +158,11 @@ namespace newconsoleapp
 			{
 				if ((this._sub_name != value))
 				{
+					this.Onsub_nameChanging(value);
+					this.SendPropertyChanging();
 					this._sub_name = value;
+					this.SendPropertyChanged("sub_name");
+					this.Onsub_nameChanged();
 				}
 			}
 		}
@@ -128,8 +178,32 @@ namespace newconsoleapp
 			{
 				if ((this._marks != value))
 				{
+					this.OnmarksChanging(value);
+					this.SendPropertyChanging();
 					this._marks = value;
+					this.SendPropertyChanged("marks");
+					this.OnmarksChanged();
 				}
+			}
+		}
+		
+		public event PropertyChangingEventHandler PropertyChanging;
+		
+		public event PropertyChangedEventHandler PropertyChanged;
+		
+		protected virtual void SendPropertyChanging()
+		{
+			if ((this.PropertyChanging != null))
+			{
+				this.PropertyChanging(this, emptyChangingEventArgs);
+			}
+		}
+		
+		protected virtual void SendPropertyChanged(String propertyName)
+		{
+			if ((this.PropertyChanged != null))
+			{
+				this.PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
 			}
 		}
 	}

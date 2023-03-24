@@ -740,3 +740,24 @@ DELETE FROM InsMarks() WHERE studid = 8 AND sub_name='Maths'
 UPDATE InsMarks() SET marks=50 WHERE Studid=8
 
 select * from subject2
+
+
+EXEC sp_columns subject2
+SELECT * FROM INFORMATION_SCHEMA.CONSTRAINT_COLUMN_USAGE  
+
+
+
+ALTER TABLE subject2
+DROP CONSTRAINT FK_subject2_student2
+
+ALTER TABLE subject2
+ADD CONSTRAINT PK_subject2 PRIMARY KEY(studid)
+
+ALTER TABLE subject2
+ADD pid int;
+
+DELETE from subject2  where pid=null
+
+select * from subject2
+
+delete from subject2 where studid=1

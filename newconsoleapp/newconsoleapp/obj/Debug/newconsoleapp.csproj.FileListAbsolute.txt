@@ -1,0 +1,7 @@
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleapp\newconsoleapp\bin\Debug\newconsoleapp.exe.config
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleapp\newconsoleapp\bin\Debug\newconsoleapp.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleapp\newconsoleapp\bin\Debug\newconsoleapp.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleapp\newconsoleapp\obj\Debug\newconsoleapp.csproj.AssemblyReference.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleapp\newconsoleapp\obj\Debug\newconsoleapp.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleapp\newconsoleapp\obj\Debug\newconsoleapp.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleapp\newconsoleapp\obj\Debug\newconsoleapp.pdb
