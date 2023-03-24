@@ -9,7 +9,7 @@ namespace newconsoleapp
     
     class Program 
     {
-        public int id { get; set; }
+       // public int id { get; set; }
         public string stud_name { get; set; }
         public string sub_name { get; set; }
         public int marks { get; set; }
@@ -18,8 +18,8 @@ namespace newconsoleapp
         {
             Program p = new Program();
 
-            Console.WriteLine("Enter student id:");
-            p.id = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter student id:");
+            //p.id = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Enter student Name");
             p.stud_name = Console.ReadLine();
@@ -35,7 +35,7 @@ namespace newconsoleapp
 
             studentmark obj = new studentmark();
 
-            obj.id = p.id;
+           // obj.id = p.id;
             obj.stud_name = p.stud_name;
             obj.sub_name = p.sub_name;
             obj.marks = p.marks;
@@ -107,7 +107,7 @@ namespace newconsoleapp
             Program p = new Program();
 
             Console.WriteLine("Enter student id to update:");
-            p.id = int.Parse(Console.ReadLine());
+            int id = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Enter new student Name");
             p.stud_name = Console.ReadLine();
@@ -122,7 +122,7 @@ namespace newconsoleapp
                 (@"Data Source=Lab-Host\SQLEXPRESS03; Initial Catalog=EYdatabase; Integrated Security=True");
 
             var updateres = from s in LTS.studentmarks
-                            where s.id == p.id
+                            where s.id == id
                             select s;
 
             //studentmark obj = new studentmark();
@@ -151,7 +151,8 @@ namespace newconsoleapp
                 Console.WriteLine("2. Insert");
                 Console.WriteLine("3. Update");
                 Console.WriteLine("4. Delete");
-                Console.WriteLine("5. Exit");
+                Console.WriteLine("5. Clear Console");
+                Console.WriteLine("6. Exit");
                 int c = int.Parse(Console.ReadLine());
                 Console.WriteLine();
                 Console.WriteLine();
@@ -175,7 +176,7 @@ namespace newconsoleapp
                     case 3:
                         {
                             Console.WriteLine("Update");
-                           // Console.WriteLine();
+                           //Console.WriteLine();
                             p1.update();
                             break;
                         }
@@ -187,6 +188,12 @@ namespace newconsoleapp
                             break;
                         }
                     case 5:
+                        {
+                            Console.Clear();
+                            Console.WriteLine("Console Cleared");
+                            break;
+                        }
+                    case 6:
                         {
                             Console.WriteLine("Exiting...");
                             i = 0;
