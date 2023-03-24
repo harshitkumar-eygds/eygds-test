@@ -1,0 +1,47 @@
+﻿@model studentmark
+
+@{
+    ViewBag.Title = "studentmarksupdate";
+}
+
+@using (Html.BeginForm("studentmarksupdate", "Home", FormMethod.Post))
+{
+    <table cellpadding="0" cellspacing="0" class="table table-borderless">
+        <tr>
+            <th colspan="2" align="center">Student Details</th>
+        </tr>
+        <tr>
+            <td>Student ID: </td>
+            <td>
+                @Html.TextBoxFor(m => m.id, new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr>
+            <td>Student Name: </td>
+            <td>
+                @Html.TextBoxFor(m => m.stud_name, new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr>
+            <td>Subject Name: </td>
+            <td>
+                @Html.TextBoxFor(m => m.sub_name, new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr>
+            <td>Marks </td>
+            <td>
+                @Html.TextBoxFor(m => m.marks, new { @class = "form-control" })
+            </td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="Submit" class="btn btn-primary" /></td>
+        </tr>
+    </table>
+}
+
+
+<div>
+    @Html.ActionLink("Back to List", "studentmarksview")
+</div>

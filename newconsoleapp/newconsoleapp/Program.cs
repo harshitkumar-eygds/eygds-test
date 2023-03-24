@@ -153,6 +153,7 @@ namespace newconsoleapp
                 Console.WriteLine("4. Delete");
                 Console.WriteLine("5. Clear Console");
                 Console.WriteLine("6. Exit");
+                Console.WriteLine();
                 int c = int.Parse(Console.ReadLine());
                 Console.WriteLine();
                 Console.WriteLine();
@@ -164,6 +165,7 @@ namespace newconsoleapp
                             Console.WriteLine("Display");
                             //Console.WriteLine();
                             p1.display();
+                            Console.WriteLine();
                             break;
                         }
                     case 2:
@@ -171,6 +173,7 @@ namespace newconsoleapp
                             Console.WriteLine("Insert");
                            // Console.WriteLine();
                             p1.insert();
+                            Console.WriteLine();
                             break;
                         }
                     case 3:
@@ -178,6 +181,7 @@ namespace newconsoleapp
                             Console.WriteLine("Update");
                            //Console.WriteLine();
                             p1.update();
+                            Console.WriteLine();
                             break;
                         }
                     case 4:
@@ -185,12 +189,14 @@ namespace newconsoleapp
                             Console.WriteLine("Delete");
                             Console.WriteLine();
                             p1.delete();
+                            Console.WriteLine();
                             break;
                         }
                     case 5:
                         {
                             Console.Clear();
                             Console.WriteLine("Console Cleared");
+                            Console.WriteLine();
                             break;
                         }
                     case 6:
