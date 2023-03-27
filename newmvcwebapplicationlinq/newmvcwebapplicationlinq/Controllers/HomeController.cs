@@ -85,6 +85,53 @@ namespace newmvcwebapplicationlinq.Controllers
             return View();
         }
 
+        public ActionResult delete(int sid)
+        {
+
+            DataClasses1DataContext LTS = new DataClasses1DataContext
+                (@"Data Source=Lab-Host\SQLEXPRESS03; Initial Catalog=EYdatabase; Integrated Security=True");
+
+            int id = sid;
+
+            if (id > 0)
+            {
+                var deleterow = from e in LTS.studentmarks
+                                where e.id == id
+                                select e;
+                LTS.studentmarks.DeleteAllOnSubmit(deleterow);
+                LTS.SubmitChanges();
+            }
+            return RedirectToAction("studentmarksview");
+           // return RedirectToRoute()
+        }
+
+        public ActionResult update(int sid, string sname, string subname, int marks)
+        {
+
+            DataClasses1DataContext LTS = new DataClasses1DataContext
+                (@"Data Source=Lab-Host\SQLEXPRESS03; Initial Catalog=EYdatabase; Integrated Security=True");
+
+            int id = sid;
+
+            if (id > 0 && sname != null && subname != null)
+            {
+                var updateres = from e in LTS.studentmarks
+                                where e.id == id
+                                select e;
+
+
+                foreach (var i in updateres)
+                {
+                    i.stud_name = sname;
+                    i.sub_name = subname;
+                    i.marks = marks;
+                }
+
+                LTS.SubmitChanges();
+            }
+            return View();
+        }
+
         public ActionResult studentmarksupdate(studentmark s)
         {
 

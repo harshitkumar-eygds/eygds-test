@@ -13,6 +13,8 @@
             <th colspan="2" text-align="center">Student Name</th>
             <th colspan="2" text-align="center">Student Subject</th>
             <th colspan="2" text-align="center">Student Marks</th>
+            <th colspan="2" text-align="center">Buttons</th>
+
         </tr>
 
         @foreach (var i in ViewBag.disp_res)
@@ -23,6 +25,12 @@
                 <td colspan="2" text-align="center">@i.stud_name</td>
                 <td colspan="2" text-align="center">@i.sub_name</td>
                 <td colspan="2" text-align="center">@i.marks</td>
+                <td colspan="2" text-align="center">
+                    @Html.ActionLink("Update", "studentmarksupdate" , new { id = i.id, stud_name = i.stud_name, sub_name = i.sub_name, marks = i.marks } ) 
+                    |
+                    @Html.ActionLink("Delete", "delete", new { sid = i.id})
+
+                </td>
             </tr>
 
         }

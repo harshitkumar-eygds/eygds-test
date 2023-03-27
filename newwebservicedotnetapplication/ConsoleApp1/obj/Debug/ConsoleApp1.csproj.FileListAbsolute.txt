@@ -1,0 +1,11 @@
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\bin\Debug\ConsoleApp1.exe.config
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\bin\Debug\ConsoleApp1.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\bin\Debug\ConsoleApp1.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\bin\Debug\newwebappservice.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\bin\Debug\newwebappservice.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\bin\Debug\newwebappservice.dll.config
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\obj\Debug\ConsoleApp1.csproj.CopyComplete
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\obj\Debug\ConsoleApp1.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newwebservicedotnetapplication\ConsoleApp1\obj\Debug\ConsoleApp1.pdb
