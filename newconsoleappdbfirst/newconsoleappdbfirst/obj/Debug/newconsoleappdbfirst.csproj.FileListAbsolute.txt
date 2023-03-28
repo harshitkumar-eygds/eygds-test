@@ -1,0 +1,12 @@
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\bin\Debug\newconsoleappdbfirst.exe.config
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\bin\Debug\newconsoleappdbfirst.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\bin\Debug\newconsoleappdbfirst.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\bin\Debug\EntityFramework.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\bin\Debug\EntityFramework.xml
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\obj\Debug\newconsoleappdbfirst.csproj.AssemblyReference.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\obj\Debug\newconsoleappdbfirst.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\obj\Debug\newconsoleappdbfirst.csproj.CopyComplete
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\obj\Debug\newconsoleappdbfirst.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappdbfirst\newconsoleappdbfirst\obj\Debug\newconsoleappdbfirst.pdb

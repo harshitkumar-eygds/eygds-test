@@ -761,3 +761,7 @@ DELETE from subject2  where pid=null
 select * from subject2
 
 delete from subject2 where studid=1
+
+
+use MYCompany
+select * from __MigrationHistory
