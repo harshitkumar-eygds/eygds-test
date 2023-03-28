@@ -1,0 +1,12 @@
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\bin\Debug\newconsoleappentityframework.exe.config
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\bin\Debug\newconsoleappentityframework.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\bin\Debug\newconsoleappentityframework.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\bin\Debug\EntityFramework.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\bin\Debug\EntityFramework.xml
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\obj\Debug\newconsoleappentityframework.csproj.AssemblyReference.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\obj\Debug\newconsoleappentityframework.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\obj\Debug\newconsoleappentityframework.csproj.CopyComplete
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\obj\Debug\newconsoleappentityframework.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\newconsoleappentityframework\newconsoleappentityframework\obj\Debug\newconsoleappentityframework.pdb

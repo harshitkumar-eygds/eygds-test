@@ -10,6 +10,15 @@ namespace newconsoleappentityframework
     {
         static void Main(string[] args)
         {
+            mydbContext dbobj = new mydbContext();
+
+            Employee emp = new Employee()
+            {
+                id = 1, name="Harshit" , deptid = "A122" , gender = 'M'
+            };
+            dbobj.Employees.Add(emp);
+
+            dbobj.SaveChanges();
         }
     }
 }
