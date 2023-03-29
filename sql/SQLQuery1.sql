@@ -765,3 +765,20 @@ delete from subject2 where studid=1
 
 use MYCompany
 select * from __MigrationHistory
+
+
+Create table Department 
+(
+	DepartmentId INT NOT NULL IDENTITY(1,1) PRIMARY KEY,
+	DepartmentName VARCHAR(50)
+)
+
+Create table Employee
+(
+EmployeeId INT NOT NULL IDENTITY (1,1) PRIMARY KEY,
+EmployeeName Varchar(50) NOT NULL,
+Department varchar(50) not null,
+EmailId varchar(50) not null,
+doj datetime not null
+
+)
