@@ -6,7 +6,7 @@ using ASP.netCOREWEBAPI.Models;
 
 namespace ASP.netCOREWEBAPI.Repository
 {
-    public class IDepartmentRepository
+    public interface IDepartmentRepository
     {
         Task<IEnumerable<Department>> GetDepartment();
         Task<Department> GetDepartmentByID(int ID);

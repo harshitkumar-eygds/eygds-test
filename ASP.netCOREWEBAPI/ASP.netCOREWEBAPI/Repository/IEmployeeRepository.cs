@@ -6,7 +6,7 @@ using ASP.netCOREWEBAPI.Models;
 
 namespace ASP.netCOREWEBAPI.Repository
 {
-    public class IEmployeeRepository
+    public interface IEmployeeRepository
     {
         Task<IEnumerable<Employee>> GetEmployees();
         Task<Employee> GetEmployeeByID(int ID);
