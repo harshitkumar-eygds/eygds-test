@@ -1,0 +1,7 @@
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\Console_test_WebApp\Console_test_WebApp\bin\Debug\Console_test_WebApp.exe.config
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\Console_test_WebApp\Console_test_WebApp\bin\Debug\Console_test_WebApp.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\Console_test_WebApp\Console_test_WebApp\bin\Debug\Console_test_WebApp.pdb
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\Console_test_WebApp\Console_test_WebApp\obj\Debug\Console_test_WebApp.csproj.AssemblyReference.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\Console_test_WebApp\Console_test_WebApp\obj\Debug\Console_test_WebApp.csproj.CoreCompileInputs.cache
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\Console_test_WebApp\Console_test_WebApp\obj\Debug\Console_test_WebApp.exe
+C:\Users\labuser\source\repos\harshitkumar-eygds\eygds-test\Console_test_WebApp\Console_test_WebApp\obj\Debug\Console_test_WebApp.pdb

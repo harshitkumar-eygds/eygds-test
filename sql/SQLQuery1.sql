@@ -782,3 +782,17 @@ EmailId varchar(50) not null,
 doj datetime not null
 
 )
+
+create table [dbo].[Employees23]
+(
+	[Id][Int] Primary key,
+	[Name][nvarchar](50) not null,
+	[Address][nvarchar](50) not null,
+	[Gender][nvarchar](50) not null,
+	[Company][nvarchar](50) not null,
+	[Designation][nvarchar](50) not null
+) 
+
+go
+
+select * from Employees23
