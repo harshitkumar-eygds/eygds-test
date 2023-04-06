@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "jccR6AcVHR/obKKfmtOPr73x+NkeldnbuVU1pocN98/9E2/HN7v/4OitFFSMLDmAG7Q5tFPuVDoMA3uFTyhb8A==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\labuser\\source\\repos\\harshitkumar-eygds\\eygds-test\\WebApplication1_hosting\\WebApplication1_hosting\\WebApplication1_hosting.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\labuser\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
+  ],
+  "logs": []
+}
