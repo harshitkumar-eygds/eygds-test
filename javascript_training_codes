@@ -1,0 +1,49 @@
+code 1
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+function Employee(name, designation, yearOfBirth)
+{
+    this.name = name;
+    this.designation - designation;
+    this.yearOfBirth = yearOfBirth;
+    console.log('3rd');
+}
+
+Employee.prototype.calculateAge = function(){
+    console.log('the current age is : ' + (2023 - this.yearOfBirth));
+}
+console.log('2nd');
+console.log(Employee.prototype);
+
+let emp1 = new Employee('alex','junior',1995);
+console.log('1st');
+console.log(emp1);
+emp1.calculateAge();
+
+
+code 2
+// Online Javascript Editor for free
+// Write, Edit and Run your Javascript code using JS Online Compiler
+
+function Persons(id, name, city)
+{
+    this.id = id;
+    this.name = name;
+    this.city = city;
+    console.log('3rd');
+}
+
+Persons.prototype.dispinf = function(){
+    console.log('Persons ID is : ' + this.id);
+    console.log('Persons name is : ' + this.name);
+    console.log('Persons city is : ' + this.city);
+}
+console.log('2nd');
+console.log(Persons.prototype);
+
+let per1 = new Persons(12,'Mohan','Delhi');
+console.log('1st');
+console.log(per1);
+per1.dispinf();
+
