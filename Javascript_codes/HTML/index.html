@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        <script src="../letconstblock.js"></script>
+        <script>
+        
+            //var num1 = document.getElementById("num1").value;
+            //var num2 = document.getElementById("num2").value;
+           // console.log(num1,num2);
+            
+            function add(){
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                console.log(num1,num2);
+                document.getElementById("result").innerHTML= parseInt(num1) + parseInt(num2);
+            }
+            
+            function sub(){
+                 var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                console.log(num1,num2);
+                document.getElementById("result").innerHTML= parseInt(num1) - parseInt(num2);
+            }
+            
+            function mul(){
+                 var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                console.log(num1,num2);
+                document.getElementById("result").innerHTML= parseInt(num1) * parseInt(num2);
+            }
+            
+            function div(){
+                var num1 = document.getElementById("num1").value;
+                var num2 = document.getElementById("num2").value;
+                console.log(num1,num2);
+                document.getElementById("result").innerHTML= parseInt(num1) / parseInt(num2);
+            }
+        </script>
+    </head>
+    
+    
+    <body>
+        <label for="num1">Enter Number 1</label>
+        <input type="text" name="text1" id="num1"></input>
+    
+        <label for="num2">Enter Number 2</label>
+        <input type="text" name="text2" id="num2"></input>
+
+        <p id="result"></p>
+        <button type="submit" id="add" onclick="add()">Add</button>
+        <button type="submit" id="sub" onclick="sub()">Subtract</button>
+        <button type="submit" id="mul" onclick="mul()">Multiply</button>
+        <button type="submit" id="div" onclick="div()">Divide</button>
+       
+        
+    </body>
+</html>
+
