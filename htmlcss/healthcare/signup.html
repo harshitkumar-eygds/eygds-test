@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+    </head>
+    <body>
+        <nav>
+        <div style="background-color: darkgray">
+            
+            <a href="index.html">Home</a>
+            <a href="aboutus.html">About Us</a>
+            <a href="contactus.html">Contact us</a>
+            <a href="login.html" style=" text-align: right;">Login</a>
+            <a href="signup.html" style="text-align: right;">Sign Up</a>
+        </div>
+            <nav>
+        <div>
+            <h1>Agar Hospital Pvt Ltd.</h1>
+            <p>Welcome! Please Create a new account</p>
+            <div>
+                <form action="index.html">
+                    <label for="fname">First Name</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <br>
+                    <br>
+                    <label for="lname">Last Name</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <br>
+                    <br>
+
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email id..">
+                    <br>            
+                    <br>
+                    <label for="phno">Mobile Number</label>
+                    <input type="text" id="phno" name="phno" placeholder="Your mobile number is..">
+                    <br>            
+                    <br>
+                    
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                    
+                    <br>            
+                    <br>
+                    
+                    <input type="file" id="profilepic" name="profilepic" accept="image/jpeg, image/png" >
+                    <br>            
+                    <br>
+                    
+                    <input type="submit" value="Submit">
+                    <br>            
+                    <br>
+                    
+                    <label for="age">Choose your age from the list:</label>
+                    <input list="age_groups_data" id="age_groups">
+                    <datalist id="age_groups_data">
+                        <option value="less than 18">
+                        <option value="18-20">
+                        <option value="20-24">
+                        <option value="23-30">
+                        <option value="30-35">
+                        <option value="35-40">
+                        <option value="40-45">
+                        <option value="45-50">
+                        <option value="50+">
+                    </datalist>
+                    
+                    <label for="month">Choose the month</label>
+                    <input type="month" id="start" name="month" min="2022-05" end="2023-09">
+                            
+                    
+                     <span style="color:red">Already have account?<a href="login.html" style="color:red">Click here!</a></span>
+                </form>
+              </div>
+        </div>
+    </body>
+</html>
