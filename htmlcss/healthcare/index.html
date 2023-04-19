@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+        
     </head>
     <body>
         <nav>
@@ -18,7 +18,41 @@
             <h1>Agar Hospital Pvt Ltd.</h1>
             <p>Welcome to our Hospital</p>
             <img src="hospitalbanner.jpg" alt="Welcome to Agar Hospital">
+            
+            <label for="date">Select Date:</label>
+            <input type="date" id="selectdate" name="selectdate">
+            <p>Today's Date is <span id="todaydate"></span></p>
+            <button type="button" OnClick="datediff()">Show the difference</button>
+            <p id="result"></p>
 
         </div>
     </body>
+        <script>
+            var currentDate = new Date();
+            var month = currentDate.getMonth() + 1;
+            var day = currentDate.getDate();
+            var year = currentDate.getFullYear();
+            document.getElementById("todaydate").innerHTML =  (day + "/" + month + "/" + year);
+            console.log((day + "/" + month + "/" + year));
+            
+            function datediff()
+            {
+                var selectedate = document.getElementById("selectdate");
+                
+                //console.log(selectedate.value);
+                
+                var newdate = new Date(selectedate.value);
+            var fyear = newdate.getFullYear() - year;
+                var fmonth = newdate.getMonth() + 1 - month;
+                var fday = newdate.getDate() - day;
+                console.log(fyear,fmonth,fday);
+                var result = fyear * 365 + fmonth * 30 + fday;
+                console.log(result);
+                
+                var fdate = newdate.getTime() - currentDate.getTime();
+                var fdate = Math.floor(fdate / (24*3600*1000));
+                console.log(fdate);
+                
+                document.getElementById("result").innerHTML = "Date difference is " + result;            }
+        </script>
 </html>

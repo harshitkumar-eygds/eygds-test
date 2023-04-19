@@ -1,77 +1,210 @@
 <!DOCTYPE html>
 <html>
     <head>
-
+<style>
+    .heading, .subheading
+    {
+        text-align: center;
+    }
+    body
+    {
+        background-color: grey;
+    }
+    .back
+    {
+        background-color: grey;
+    }
+    .front
+    {
+        background-color: lightgray;
+        margin: 20px;
+        padding: 20px;
+    }
+    .labeltext
+    {
+        text-align: right;
+        padding-right: 10px;
+    }
+    .labeltext:after
+    {
+        content: ":";
+    }
+    .inputfield
+    {
+        text-align: left;
+        padding-left: 2px;
+    }
+    .form
+    {
+        text-align: center;
+          
+    }
+    .table
+    {
+        text-align: center;
+          width: 100%;
+    }
+    
+    
+        </style>
+        <script>
+            function validate()
+            {
+                console.log("in validate");
+                var fname = document.forms["RegForm"]["firstname"].value;
+                var lname = document.forms["RegForm"]["lastname"].value;
+                var email = document.forms["RegForm"]["email"].value;
+                var phno = document.forms["RegForm"]["phno"].value;
+                var gender = document.forms["RegForm"]["gender"].value;
+                console.log(gender);
+                var age_groupds = document.forms["RegForm"]["age_groups"].value;
+                
+                console.log(fname,lname,email,phno,gender,age_groupds);
+                
+                var regEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g ;
+                var regPhno = /^\d{10}$/ ;
+                var regName = /^[A-Za-z]+$/;
+                console.log(regName.test(fname));
+                
+                if(fname=="" || !regName.test(fname))
+                {
+                    window.alert("Please enter your First Name properly");
+                    
+                    return false;
+                }
+                if(lname=="" || !regName.test(lname))
+                {
+                    window.alert("Please enter your Last Name properly");
+                    
+                    return false;
+                }
+                if(email=="" || !regEmail.test(email))
+                {
+                    window.alert("please enter a valid email address");
+                    
+                    return false;
+                }
+                
+                if(phno=="" || !regPhno.test(phno))
+                {
+                    window.alert("Please enter valid phone number");
+                  
+                    return false;
+                }
+                if(gender == "")
+                    {
+                        window.alert("Please select gender")
+                        
+                        return false;
+                    }
+                return true;
+            }
+        </script>
     </head>
     <body>
+         <!---
         <nav>
         <div style="background-color: darkgray">
-            
+           
             <a href="index.html">Home</a>
             <a href="aboutus.html">About Us</a>
             <a href="contactus.html">Contact us</a>
             <a href="login.html" style=" text-align: right;">Login</a>
             <a href="signup.html" style="text-align: right;">Sign Up</a>
+
         </div>
             <nav>
-        <div>
-            <h1>Agar Hospital Pvt Ltd.</h1>
-            <p>Welcome! Please Create a new account</p>
-            <div>
-                <form action="index.html">
-                    <label for="fname">First Name</label>
-                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
-                    <br>
-                    <br>
-                    <label for="lname">Last Name</label>
-                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-                    <br>
-                    <br>
-
-                    <label for="email">Email</label>
-                    <input type="text" id="email" name="email" placeholder="Your email id..">
-                    <br>            
-                    <br>
-                    <label for="phno">Mobile Number</label>
-                    <input type="text" id="phno" name="phno" placeholder="Your mobile number is..">
-                    <br>            
-                    <br>
+--->
+        <div class="back">
+            <h1 class="heading">Agar Hospital Pvt Ltd.</h1>
+            <p class="subheading">Welcome! Please Create a new account</p>
+            <div class="front">
+                <form  name="RegForm" class="form" onsubmit="return validate()" method="post">
+                    <table class="table">
+                        <tr class="row">
+                            <td class="labeltext"> 
+                                <label for="fname">First Name</label>
+                            </td>
+                            <td class="inputfield">
+                                <input  type="text" id="fname" name="firstname" placeholder="Your name.." >
+                            </td>
+                        </tr>
+                        <tr class="row">
+                            <td class="labeltext"> 
+                                <label for="lname">Last Name</label>
+                            </td>
+                            <td class="inputfield">
+                                <input  type="text" id="lname" name="lastname" placeholder="Your last name.." >
+                            </td>
+                        </tr>
+                        <tr class="row">
+                            <td class="labeltext"> 
+                                <label class="labeltext" for="email">Email</label>
+                            </td>
+                           <td class="inputfield">
+                                <input type="text" id="email" name="email" placeholder="Your email id.." >
+                            </td>
+                        </tr>
+                        <tr class="row">
+                            <td class="labeltext"> 
+                                  <label for="phno">Mobile Number</label>
+                            </td>
+                            <td class="inputfield">
+                                  <input type="text" id="phno" name="phno" placeholder="Your mobile number is.." >
+                            </td>
+                        </tr>
+                        <tr class="row">
+                            <td class="labeltext"> 
+                                <label for="gender">Gender</label>
+                            </td>
+                            <td class="inputfield">
+                                <input type="radio" id="male" name="gender" value="male" >
+                                <label for="male">Male</label>
+                                <input type="radio" id="female" name="gender" value="female" >
+                                <label for="female">Female</label>
+                                <input type="radio" id="other" name="gender" value="other" >
+                                <label for="other">Other</label>
+                            </td>
+                        </tr>
+                        <tr class="row">
+                            <td class="labeltext"> 
+                                <label for="profilepic">Upload your profile pic</label>
+                            </td>
+                            <td class="inputfield">
+                                <input type="file" id="profilepic" name="profilepic" accept="image/jpeg, image/png" >
+                            </td>
+                        </tr>
+                        <tr class="row">
+                            <td class="labeltext"> 
+                                <label for="age">Choose your age from the list</label>
+                            </td>
+                            <td class="inputfield">
+                                <input list="age_groups_data" id="age_groups"  name="age_groups"> 
+                                <datalist id="age_groups_data">
+                                    <option value="less than 18">
+                                    <option value="18-20">
+                                    <option value="20-24">
+                                    <option value="23-30">
+                                    <option value="30-35">
+                                    <option value="35-40">
+                                    <option value="40-45">
+                                    <option value="45-50">
+                                    <option value="50+">
+                                </datalist>
+                            </td>
+                        </tr>
+                        
+                    </table>
+                   
                     
-                    <input type="radio" id="male" name="gender" value="male">
-                    <label for="male">Male</label>
-                    <input type="radio" id="female" name="gender" value="female">
-                    <label for="female">Female</label>
-                    <input type="radio" id="other" name="gender" value="other">
-                    <label for="other">Other</label>
                     
-                    <br>            
-                    <br>
                     
-                    <input type="file" id="profilepic" name="profilepic" accept="image/jpeg, image/png" >
-                    <br>            
-                    <br>
+                    
+                    
+                   
+                   
                     
                     <input type="submit" value="Submit">
-                    <br>            
-                    <br>
-                    
-                    <label for="age">Choose your age from the list:</label>
-                    <input list="age_groups_data" id="age_groups">
-                    <datalist id="age_groups_data">
-                        <option value="less than 18">
-                        <option value="18-20">
-                        <option value="20-24">
-                        <option value="23-30">
-                        <option value="30-35">
-                        <option value="35-40">
-                        <option value="40-45">
-                        <option value="45-50">
-                        <option value="50+">
-                    </datalist>
-                    
-                    <label for="month">Choose the month</label>
-                    <input type="month" id="start" name="month" min="2022-05" end="2023-09">
-                            
                     
                      <span style="color:red">Already have account?<a href="login.html" style="color:red">Click here!</a></span>
                 </form>

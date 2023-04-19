@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        
+        
+        <script>
+        function displaySelectedCountry()
+            {
+                var countrylist = document.getElementById("countrylist");
+                try
+                {
+                    var selectedCountry = countrylist.options[countrylist.selectedIndex].innerHTML;
+                }
+                catch(err)
+                {
+                    var selectedCountry="No Country in the list";
+                    console.log(err.message);
+                }
+                
+                console.log(selectedCountry);
+                document.getElementById("SelectedCountry").innerHTML = selectedCountry;
+            }
+            
+            function displaySelectedGender()
+            {
+                var ele = document.getElementsByName("gender");
+                for(i=0;i<ele.length;i++)
+                {
+                    if(ele[i].checked)
+                        document.getElementById("SelectedGender").innerHTML = ele[i].value;
+                    
+                }
+            }
+            
+            function RemoveSelectedCountry()
+            {
+                var countrylist = document.getElementById("countrylist");
+                var selectedCountry = countrylist.selectedIndex;
+                console.log(countrylist.selectedIndex);
+                countrylist.remove(selectedCountry);
+            }
+        </script>
+    </head>
+    
+    
+    <body>
+        <select id="countrylist" >
+            <option value="United States">United States</option>
+            <option value="India">India</option>
+            <option value="China">China</option>
+            <option value="Germany">Germany</option>
+        </select>
+        <button onClick="displaySelectedCountry()">Show Country</button>
+        
+        <button onClick="RemoveSelectedCountry()">Remove Country</button>
+        
+        <p>Selected Country : <span id="SelectedCountry"></span></p>
+        
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label>
+        <button type="button" onClick="displaySelectedGender()">Show Gender</button>
+        <p>Selected Gender : <span id="SelectedGender"></span></p>
+        
+        
+    </body>
+</html>
+
