@@ -1,0 +1,27 @@
+<h1 [innerText]="title"></h1>
+<h2>Example 1</h2>
+
+<button (click)="clickMe()">Click me</button>
+<p>You have clicked {{count}}</p>
+
+
+<button (click)="onShow()">Alert</button>
+<button (click)="clickMe(); count1=count; ">Click me @</button>
+<p>You have clicked @ {{count1}}</p>
+
+<input #text2 (keyup)="keyup(text)">
+
+<input type="text" autogrow>
+<h2>{{text2}}</h2>
+
+<p>NEw new new here </p>
+
+
+User Name : <input type="text" [(ngModel)]="userName1"><br/>
+{{userName1}}
+<br>
+<br>
+<br>
+<br>
+
+<input type="text" [(ngModel)]="userName" >

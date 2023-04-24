@@ -17,6 +17,7 @@ export class AppComponent {
   msg:string = "Welcome to EY BY Harshit";
   isUnchanged:boolean = true;
   imgsrc:string = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKuxEstdsRE1Vi6LO-TBjtjtaNo9qt6SpKvn0PRmBu1w&s"
-
-  
+  allclass="colorClass italicClass boldClass";
+  buttonclass ="bgcolor font fontsize ";
+    
 }

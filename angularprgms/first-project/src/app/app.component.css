@@ -3,3 +3,15 @@ h1
     color: blue;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.bgcolor
+{
+    background-color: darkred;
+}
+.font
+{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.fontsize
+{
+    font-size: larger;
+}
