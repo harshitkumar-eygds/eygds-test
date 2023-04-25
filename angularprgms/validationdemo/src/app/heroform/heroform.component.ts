@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Heroclass } from '../heroclass';
 
 @Component({
   selector: 'app-heroform',
@@ -6,5 +7,11 @@ import { Component } from '@angular/core';
   styleUrls: ['./heroform.component.css']
 })
 export class HeroformComponent {
-
+  submitted = false;
+  onSubmit() {this.submitted = true;}
+  model:any ="";
+  get diagnostic()
+  {
+    return JSON.stringify(this.model);
+  }
 }
