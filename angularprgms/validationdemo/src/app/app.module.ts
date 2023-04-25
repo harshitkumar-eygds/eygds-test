@@ -1,20 +1,18 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
-import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ComponeComponent } from './compone/compone.component';
-import { ComptwoComponent } from './comptwo/comptwo.component';
+import { HeroformComponent } from './heroform/heroform.component';
+import { HerocomponentComponent } from './herocomponent/herocomponent.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    ComponeComponent,
-    ComptwoComponent
+    HeroformComponent,
+    HerocomponentComponent
   ],
   imports: [
-    BrowserModule,
-    AppRoutingModule
+    BrowserModule
   ],
   providers: [],
   bootstrap: [AppComponent]
