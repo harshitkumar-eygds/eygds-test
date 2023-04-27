@@ -795,4 +795,23 @@ create table [dbo].[Employees23]
 
 go
 
+
+
 select * from Employees23
+
+use security_db
+Create Table UserMaster 
+(
+	UserID INT PRIMARY KEY,
+	UserName VARCHAR(50),
+	UserPassword VARCHAR(50),
+	UserRoles VARCHAR (500),
+	UserEmailID VARCHAR(500)
+)
+
+INSERT INTO UserMaster(UserID,UserName,UserPassword,UserRoles,UserEmailID) VALUES (101,'Anurag','123456','Admin','anurag@gmail.com')
+INSERT INTO UserMaster(UserID,UserName,UserPassword,UserRoles,UserEmailID) VALUES (102,'Rohit','Pass123','User','rohit@gmail.com')
+INSERT INTO UserMaster(UserID,UserName,UserPassword,UserRoles,UserEmailID) VALUES (103,'Harshit','admin@admin','SuperAdmin','harshit@gmail.com')
+INSERT INTO UserMaster(UserID,UserName,UserPassword,UserRoles,UserEmailID) VALUES (104,'Shilpa','password','Admin, User','shilpa@gmail.com')
+
+select * from  UserMaster 
